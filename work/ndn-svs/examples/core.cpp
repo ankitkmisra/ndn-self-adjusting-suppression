@@ -19,6 +19,7 @@ struct Options
   std::string m_id;
   int pub_timing; // Frequency of publishing in milliseconds
   int timerSetting; // Timer setting for experiments
+  int timerScaling;
 };
 
 class Program
@@ -34,7 +35,8 @@ public:
             std::bind(&Program::onUpdate, this, _1), // Callback on learning new sequence numbers from SVS
             ndn::svs::SecurityOptions::DEFAULT,      // Security configuration
             ndn::Name(m_options.m_id),               // Unique prefix for this node
-            m_options.timerSetting
+            m_options.timerSetting,
+            m_options.timerScaling
         );
 
         std::cout << "SVS client starting: " << m_options.m_id << std::endl;
@@ -46,7 +48,7 @@ public:
         std::thread svsThread([this] { 
             while (m_running) { // Check m_running flag
                 face.processEvents(ndn::time::milliseconds(500));
-                std::this_thread::sleep_for(std::chrono::milliseconds(100)); // Small sleep to avoid busy-waiting
+                std::this_thread::sleep_for(std::chrono::milliseconds(10)); // Small sleep to avoid busy-waiting
             }
         });
 
@@ -65,17 +67,17 @@ public:
             auto elapsedTime = std::chrono::duration_cast<std::chrono::seconds>(currentTime - startTime).count();
 
             // Stop publishing after 120 seconds
-            if (elapsedTime < 120) {
+            if (elapsedTime < 700) {
                 std::lock_guard<std::mutex> lock(m_mutex);
                 auto seq = m_svs->getSeqNo() + 1;
                 m_svs->updateSeqNo(seq);
                 auto timeSinceEpoch = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
                 std::cout << "Published sequence number: " << m_options.m_id << "=" << seq <<
-                  " at " << timeSinceEpoch << std::endl;
+                  ", " << timeSinceEpoch << std::endl;
             }
 
             // Exit the loop after 150 seconds
-            if (elapsedTime >= 150) {
+            if (elapsedTime >= 720) {
                 break;
             }
 
@@ -99,7 +101,7 @@ protected:
         for (size_t i = 0; i < v.size(); i++) {
             for (ndn::svs::SeqNo s = v[i].low; s <= v[i].high; ++s) {
                 std::cout << "Received update: " << v[i].nodeId << "=" << s << 
-                  " at " << timeSinceEpoch << std::endl;
+                  ", " << timeSinceEpoch << std::endl;
             }
         }
     }
@@ -118,8 +120,8 @@ private:
 int
 main(int argc, char** argv)
 {
-  if (argc != 4) {
-    std::cerr << "Usage: " << argv[0] << " <prefix> <pub_timing> <timerSetting>" << std::endl;
+  if (argc != 5) {
+    std::cerr << "Usage: " << argv[0] << " <prefix> <pub_timing> <timerSetting> <timerScaling>" << std::endl;
     return 1;
   }
 
@@ -128,6 +130,7 @@ main(int argc, char** argv)
   opt.m_id = argv[1];
   opt.pub_timing = std::stoi(argv[2]);
   opt.timerSetting = std::stoi(argv[3]);
+  opt.timerScaling = std::stoi(argv[4]);
 
   Program program(opt);
 

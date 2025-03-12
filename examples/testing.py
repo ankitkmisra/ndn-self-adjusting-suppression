@@ -41,29 +41,33 @@ from mininet.node import OVSController
 from tqdm import tqdm
 
 # ======================= CONFIGURATION ============================
-OVERALL_RUN = 1
+OVERALL_RUN = 4
 PUB_TIMING_VALS = [45000]
-TIMER_SETTING_VALS = [0] #[0, 1]
-RUN_NUMBER_VALS = list(range(1, 4))
-DROP_RATE_VALS = [25] #[0, 12.5, 25, 37.5, 50]
-LOG_PREFIX = "GEANT" #"tmp"
-TOPO_FILE = "/mini-ndn/topologies/geant.conf" #"/mini-ndn/examples/tmp.conf"  # Update this path as needed
+TIMER_SETTING_VALS = [0]
+RUN_NUMBER_VALS = [1]
+DROP_RATE_VALS = [50] #[0,25,50]
+DELAY_VALS = [10]
+TIMER_SCALING_VALS = [3]
+LOG_PREFIX = "GEANT37"
+TOPO_FILE = "/mini-ndn/examples/geant37.conf" # Update this path as needed
 
 # SVS executable path
 SYNC_EXEC = "/mini-ndn/work/ndn-svs/build/examples/core"  # Update this path as needed
 
 # Log directory for SVS
 LOG_MAIN_PATH = "/mini-ndn/work/log/{}/".format(OVERALL_RUN)
-LOG_MAIN_DIRECTORY = LOG_MAIN_PATH + "svs/"
+LOG_MAIN_DIRECTORY = LOG_MAIN_PATH
 # ==================================================================
 
 RUN_NUMBER = 0
 PUB_TIMING = 0
 TIMER_SETTING = 0
 DROP_RATE = 0
+TIMER_SCALING = 0
+DELAY = 0
 
 def getLogPath():
-    LOG_NAME = "{}-{}-timer{}-drop{}".format(LOG_PREFIX, RUN_NUMBER, TIMER_SETTING, DROP_RATE)
+    LOG_NAME = "{}-timer{}-drop{}-scaling{}".format(LOG_PREFIX, TIMER_SETTING, DROP_RATE, TIMER_SCALING)
     logpath = LOG_MAIN_DIRECTORY + LOG_NAME
 
     if not os.path.exists(logpath):
@@ -84,8 +88,8 @@ class SvsCoreApplication(Application):
         exe = SYNC_EXEC
         identity = self.get_svs_identity()
 
-        run_cmd = "{0} {1} {4} {5} >{2}/stdout/{3}.log 2>{2}/stderr/{3}.log &".format(
-            exe, identity, getLogPath(), self.node.name, PUB_TIMING, TIMER_SETTING)
+        run_cmd = "{0} {1} {4} {5} {6} >{2}/stdout/{3}.log 2>{2}/stderr/{3}.log &".format(
+            exe, identity, getLogPath(), self.node.name, PUB_TIMING, TIMER_SETTING, TIMER_SCALING)
 
         ret = self.node.cmd(run_cmd)
         info("[{}] running {} == {}\n".format(self.node.name, run_cmd, ret))
@@ -143,39 +147,49 @@ if __name__ == '__main__':
         for run_number in RUN_NUMBER_VALS:
             for timer_setting in TIMER_SETTING_VALS:
                 for drop_rate in DROP_RATE_VALS:
-                    RUN_NUMBER = run_number
-                    PUB_TIMING = pub_timing
-                    TIMER_SETTING = timer_setting
-                    DROP_RATE = drop_rate
+                    for timer_scaling in TIMER_SCALING_VALS:
+                        for delay in DELAY_VALS:
+                            RUN_NUMBER = run_number
+                            PUB_TIMING = pub_timing
+                            TIMER_SETTING = timer_setting
+                            DROP_RATE = drop_rate
+                            TIMER_SCALING = timer_scaling
+                            DELAY = delay
 
-                    for link in ndn.net.links:
-                        for intf in link.intf1, link.intf2:
-                            intf.config(delay='10ms', loss=DROP_RATE)
+                            # if TIMER_SETTING == 0 and TIMER_SCALING > 2:
+                            #     continue
 
-                    for node in ndn.net.hosts:
-                        cmd = 'nfdc cs erase /'
-                        node.cmd(cmd)
+                            if DROP_RATE == 0 and (TIMER_SETTING > 0 or TIMER_SCALING > 2):
+                                continue
 
-                        with open("{}/report-start-{}.status".format(getLogPath(), node.name), "w") as f:
-                            f.write(node.cmd('nfdc status report'))
+                            for link in ndn.net.links:
+                                for intf in link.intf1, link.intf2:
+                                    intf.config(delay=f'{DELAY}ms', loss=DROP_RATE)
 
-                    time.sleep(1)
+                            for node in ndn.net.hosts:
+                                cmd = 'nfdc cs erase /'
+                                node.cmd(cmd)
 
-                    random.seed(RUN_NUMBER)
+                                with open("{}/report-start-{}.status".format(getLogPath(), node.name), "w") as f:
+                                    f.write(node.cmd('nfdc status report'))
 
-                    svs_core_app = AppManager(ndn, ndn.net.hosts, SvsCoreApplication)
+                            time.sleep(1)
 
-                    pids = get_pids()
-                    info("pids: {}\n".format(pids))
-                    count = count_running(pids)
-                    while count > 0:
-                        info("{} nodes are running\n".format(count))
-                        time.sleep(5)
-                        count = count_running(pids)
+                            random.seed(RUN_NUMBER)
 
-                    for node in ndn.net.hosts:
-                        with open("{}/report-end-{}.status".format(getLogPath(), node.name), "w") as f:
-                            f.write(node.cmd('nfdc status report'))
+                            svs_core_app = AppManager(ndn, ndn.net.hosts, SvsCoreApplication)
+
+                            pids = get_pids()
+                            info("pids: {}\n".format(pids))
+                            count = count_running(pids)
+                            while count > 0:
+                                info("{} nodes are running\n".format(count))
+                                time.sleep(5)
+                                count = count_running(pids)
+
+                            for node in ndn.net.hosts:
+                                with open("{}/report-end-{}.status".format(getLogPath(), node.name), "w") as f:
+                                    f.write(node.cmd('nfdc status report'))
 
     ndn.stop()
 

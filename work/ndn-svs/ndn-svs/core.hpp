@@ -78,7 +78,8 @@ public:
              const UpdateCallback& onUpdate,
              const SecurityOptions& securityOptions = SecurityOptions::DEFAULT,
              const NodeID& nid = EMPTY_NODE_ID,
-             int timerSetting = 0);
+             int timerSetting = 0,
+             int timerScaling = 2);
 
   /**
    * @brief Reset the sync tree (and restart synchronization again)
@@ -204,7 +205,7 @@ public:
    * @param vvOther state vector to merge in
    * @returns if recorded successfully
    */
-  bool recordVector(const VersionVector& vvOther);
+  bool recordVector(const VersionVector& vvOther, std::string senderNodeId = "", uint64_t time_diff = 0);
 
   /**
    * @brief Enter suppression state by setting
@@ -213,7 +214,7 @@ public:
    *
    * @param vvOther first vector to record
    */
-  void enterSuppressionState(const VersionVector& vvOther);
+  void enterSuppressionState(const VersionVector& vvOther, std::string senderNodeId = "", uint64_t time_diff = 0);
 
   /// @brief Reference to scheduler
   ndn::Scheduler& getScheduler()
@@ -243,6 +244,9 @@ private:
   // Aggregates incoming vectors while in suppression state
   std::unique_ptr<VersionVector> m_recordedVv = nullptr;
   mutable std::mutex m_recordedVvMutex;
+  // Aggregates list of nodes being suppressed with the next Sync interest, along with time at which they were added to suppressionDict
+  std::unordered_map<std::string, uint64_t> m_suppressionDict;
+  mutable std::mutex m_suppressionDictMutex;
 
   // Extra block
   GetExtraBlockCallback m_getExtraBlock;
@@ -288,6 +292,8 @@ private:
 
   // Method to update m_maxSuppressionTime based on the average propagation delay
   void updateMaxSuppressionTime();
+
+  int m_timerScaling;
 };
 
 } // namespace ndn::svs

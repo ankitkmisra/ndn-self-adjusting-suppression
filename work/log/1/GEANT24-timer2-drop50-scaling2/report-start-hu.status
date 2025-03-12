@@ -1,0 +1,173 @@
+General NFD status:
+                version=24.07-14-g2b43d675
+              startTime=20250311T013911.400000
+            currentTime=20250311T041414.421000
+                 uptime=9303 seconds
+       nNameTreeEntries=100
+            nFibEntries=47
+            nPitEntries=2
+   nMeasurementsEntries=0
+             nCsEntries=1
+           nInInterests=17558
+          nOutInterests=78888
+                nInData=1556
+               nOutData=1534
+               nInNacks=0
+              nOutNacks=0
+    nSatisfiedInterests=1534
+  nUnsatisfiedInterests=11151
+Channels:
+  unix:///run/nfd/hu.sock
+  dev://hu-eth0
+  dev://hu-eth1
+  dev://hu-eth2
+  dev://hu-eth3
+  dev://hu-eth4
+  dev://hu-eth5
+  dev://hu-eth6
+  tcp4://0.0.0.0:6363
+  tcp6://[::]:6363
+  udp4://0.0.0.0:6363
+  udp6://[::]:6363
+Faces:
+  faceid=1 remote=internal:// local=internal:// congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={0i 1285d 0n 610713B} out={1413i 0d 0n 136561B}} flags={local permanent point-to-point local-fields}
+  faceid=254 remote=contentstore:// local=contentstore:// mtu=8800 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={local permanent point-to-point}
+  faceid=255 remote=null:// local=null:// mtu=8800 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={local permanent point-to-point}
+  faceid=256 remote=ether://[01:00:5e:00:17:aa] local=dev://hu-eth1 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=1500 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access}
+  faceid=257 remote=ether://[01:00:5e:00:17:aa] local=dev://hu-eth0 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=1500 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access}
+  faceid=258 remote=ether://[01:00:5e:00:17:aa] local=dev://hu-eth4 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=1500 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access}
+  faceid=259 remote=ether://[01:00:5e:00:17:aa] local=dev://hu-eth6 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=1500 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access}
+  faceid=260 remote=ether://[01:00:5e:00:17:aa] local=dev://hu-eth2 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=1500 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access}
+  faceid=261 remote=ether://[01:00:5e:00:17:aa] local=dev://hu-eth5 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=1500 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access}
+  faceid=262 remote=ether://[01:00:5e:00:17:aa] local=dev://hu-eth3 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=1500 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access}
+  faceid=263 remote=fd://64 local=unix:///run/nfd/hu.sock congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={1005i 272d 0n 242529B} out={273i 861d 0n 405670B}} flags={local on-demand point-to-point local-fields congestion-marking}
+  faceid=264 remote=udp4://224.0.23.170:56363 local=udp4://10.0.0.26:47847 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access congestion-marking}
+  faceid=265 remote=udp4://224.0.23.170:56363 local=udp4://10.0.0.94:37028 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access congestion-marking}
+  faceid=266 remote=udp4://224.0.23.170:56363 local=udp4://10.0.0.161:39950 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access congestion-marking}
+  faceid=267 remote=udp4://224.0.23.170:56363 local=udp4://10.0.0.181:43638 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access congestion-marking}
+  faceid=268 remote=udp4://224.0.23.170:56363 local=udp4://10.0.0.169:34311 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access congestion-marking}
+  faceid=269 remote=udp4://224.0.23.170:56363 local=udp4://10.0.0.177:42942 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access congestion-marking}
+  faceid=270 remote=udp4://224.0.23.170:56363 local=udp4://10.0.0.173:39044 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access congestion-marking}
+  faceid=271 remote=udp6://[ff02::1234%hu-eth1]:56363 local=udp6://[fe80::9437:ff:fe0f:1673%hu-eth1]:33936 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access congestion-marking}
+  faceid=272 remote=udp6://[ff02::1234%hu-eth0]:56363 local=udp6://[fe80::946c:8bff:fe4d:5df6%hu-eth0]:34435 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access congestion-marking}
+  faceid=273 remote=udp6://[ff02::1234%hu-eth4]:56363 local=udp6://[fe80::2046:78ff:fe4a:172c%hu-eth4]:37149 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access congestion-marking}
+  faceid=274 remote=udp6://[ff02::1234%hu-eth6]:56363 local=udp6://[fe80::c47b:3bff:fec6:d76f%hu-eth6]:47029 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access congestion-marking}
+  faceid=275 remote=udp6://[ff02::1234%hu-eth2]:56363 local=udp6://[fe80::90d7:91ff:fe4e:e246%hu-eth2]:42579 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access congestion-marking}
+  faceid=276 remote=udp6://[ff02::1234%hu-eth5]:56363 local=udp6://[fe80::d4f5:e8ff:feac:1ff5%hu-eth5]:39398 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access congestion-marking}
+  faceid=277 remote=udp6://[ff02::1234%hu-eth3]:56363 local=udp6://[fe80::54ba:90ff:fec9:64c8%hu-eth3]:45083 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={0i 0d 0n 0B} out={0i 0d 0n 0B}} flags={non-local permanent multi-access congestion-marking}
+  faceid=280 remote=udp4://10.0.0.93:6363 local=udp4://10.0.0.94:6363 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={294i 0d 0n 518188B} out={10737i 0d 0n 18867131B}} flags={non-local persistent point-to-point congestion-marking}
+  faceid=282 remote=udp4://10.0.0.25:6363 local=udp4://10.0.0.26:6363 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={5308i 0d 0n 9181893B} out={7443i 0d 0n 13095792B}} flags={non-local persistent point-to-point congestion-marking}
+  faceid=284 remote=udp4://10.0.0.170:6363 local=udp4://10.0.0.169:6363 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={808i 0d 0n 1426435B} out={10224i 0d 0n 17958588B}} flags={non-local persistent point-to-point congestion-marking}
+  faceid=286 remote=udp4://10.0.0.174:6363 local=udp4://10.0.0.173:6363 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={4405i 0d 0n 7643425B} out={8281i 0d 0n 14563919B}} flags={non-local persistent point-to-point congestion-marking}
+  faceid=288 remote=udp4://10.0.0.162:6363 local=udp4://10.0.0.161:6363 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={3550i 0d 0n 6117979B} out={8956i 0d 0n 15757991B}} flags={non-local persistent point-to-point congestion-marking}
+  faceid=290 remote=udp4://10.0.0.178:6363 local=udp4://10.0.0.177:6363 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={300i 0d 0n 528020B} out={10732i 0d 0n 18860231B}} flags={non-local persistent point-to-point congestion-marking}
+  faceid=292 remote=udp4://10.0.0.182:6363 local=udp4://10.0.0.181:6363 congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={299i 0d 0n 529751B} out={10731i 0d 0n 18856917B}} flags={non-local persistent point-to-point congestion-marking}
+  faceid=578 remote=fd://93 local=unix:///run/nfd/hu.sock congestion={base-marking-interval=100ms default-threshold=65536B} mtu=8800 counters={in={7i 0d 0n 312B} out={0i 0d 0n 0B}} flags={local on-demand point-to-point congestion-marking}
+FIB:
+  /ndn/it-site/it nexthops={faceid=282 (cost=20), faceid=288 (cost=40), faceid=286 (cost=40)}
+  /ndn/de2-site/de2 nexthops={faceid=282 (cost=20), faceid=288 (cost=20), faceid=286 (cost=20)}
+  /ndn/ro-site/ro nexthops={faceid=284 (cost=10)}
+  /localhost/nfd/rib nexthops={faceid=263 (cost=0)}
+  /ndn/svs nexthops={faceid=280 (cost=10), faceid=290 (cost=10), faceid=292 (cost=10), faceid=284 (cost=30), faceid=286 (cost=30), faceid=282 (cost=40), faceid=288 (cost=40)}
+  /ndn/is-site/is nexthops={faceid=282 (cost=50), faceid=288 (cost=50), faceid=286 (cost=50)}
+  /ndn/mk-site/mk nexthops={faceid=284 (cost=30)}
+  /ndn/am-site/am nexthops={faceid=282 (cost=30), faceid=288 (cost=30), faceid=286 (cost=30)}
+  /ndn/rs-site/rs nexthops={faceid=290 (cost=10)}
+  /ndn/sk-site/sk nexthops={faceid=282 (cost=20), faceid=288 (cost=40), faceid=286 (cost=40)}
+  /ndn/pt-site/pt nexthops={faceid=286 (cost=40), faceid=282 (cost=50), faceid=288 (cost=50)}
+  /ndn/dk-site/dk nexthops={faceid=282 (cost=40), faceid=288 (cost=40), faceid=286 (cost=40)}
+  /ndn/lu-site/lu nexthops={faceid=282 (cost=30), faceid=288 (cost=30), faceid=286 (cost=30)}
+  /ndn/be-site/be nexthops={faceid=282 (cost=40), faceid=288 (cost=40), faceid=286 (cost=40)}
+  /ndn/lv-site/lv nexthops={faceid=282 (cost=50), faceid=288 (cost=50), faceid=286 (cost=50)}
+  /ndn/no-site/no nexthops={faceid=282 (cost=60), faceid=288 (cost=60), faceid=286 (cost=60)}
+  /ndn/by-site/by nexthops={faceid=282 (cost=30), faceid=288 (cost=40), faceid=286 (cost=40)}
+  /ndn/hr-site/hr nexthops={faceid=282 (cost=20), faceid=288 (cost=40), faceid=286 (cost=40)}
+  /ndn/al-site/al nexthops={faceid=282 (cost=30), faceid=288 (cost=50), faceid=286 (cost=50)}
+  /ndn/md-site/md nexthops={faceid=284 (cost=20)}
+  /ndn/fi-site/fi nexthops={faceid=282 (cost=60), faceid=288 (cost=60), faceid=286 (cost=60)}
+  /ndn/de1-site/de1 nexthops={faceid=282 (cost=30), faceid=288 (cost=30), faceid=286 (cost=30)}
+  /ndn/me-site/me nexthops={faceid=292 (cost=10)}
+  /ndn/fr1-site/fr1 nexthops={faceid=282 (cost=40), faceid=288 (cost=40), faceid=286 (cost=40)}
+  /ndn/tr-site/tr nexthops={faceid=286 (cost=10), faceid=282 (cost=30), faceid=288 (cost=30)}
+  /ndn/pl-site/pl nexthops={faceid=282 (cost=20), faceid=288 (cost=30), faceid=286 (cost=30)}
+  /ndn/bg-site/bg nexthops={faceid=284 (cost=20)}
+  /ndn/cy-site/cy nexthops={faceid=286 (cost=20), faceid=282 (cost=30), faceid=288 (cost=30)}
+  /ndn/fr2-site/fr2 nexthops={faceid=282 (cost=30), faceid=288 (cost=50), faceid=286 (cost=50)}
+  /localhost/nfd nexthops={faceid=1 (cost=0)}
+  /ndn/ie-site/ie nexthops={faceid=286 (cost=40), faceid=282 (cost=50), faceid=288 (cost=50)}
+  /ndn/at-site/at nexthops={faceid=282 (cost=10), faceid=288 (cost=30), faceid=286 (cost=30)}
+  /ndn/az-site/az nexthops={faceid=282 (cost=30), faceid=288 (cost=30), faceid=286 (cost=30)}
+  /ndn/es-site/es nexthops={faceid=282 (cost=50), faceid=288 (cost=50), faceid=286 (cost=50)}
+  /ndn/nl-site/nl nexthops={faceid=282 (cost=30), faceid=288 (cost=30), faceid=286 (cost=30)}
+  /ndn/il-site/il nexthops={faceid=282 (cost=30), faceid=288 (cost=30), faceid=286 (cost=30)}
+  /ndn/si-site/si nexthops={faceid=282 (cost=20), faceid=288 (cost=40), faceid=286 (cost=40)}
+  /ndn/uk-site/uk nexthops={faceid=286 (cost=30), faceid=282 (cost=40), faceid=288 (cost=40)}
+  /ndn/ge-site/ge nexthops={faceid=288 (cost=10), faceid=282 (cost=30), faceid=286 (cost=30)}
+  /ndn/ch-site/ch nexthops={faceid=282 (cost=30), faceid=288 (cost=30), faceid=286 (cost=30)}
+  /ndn/lt-site/lt nexthops={faceid=282 (cost=60), faceid=288 (cost=60), faceid=286 (cost=60)}
+  /ndn/mt-site/mt nexthops={faceid=282 (cost=30), faceid=288 (cost=50), faceid=286 (cost=50)}
+  /ndn/gr-site/gr nexthops={faceid=282 (cost=20), faceid=288 (cost=40), faceid=286 (cost=40)}
+  /ndn/ee-site/ee nexthops={faceid=282 (cost=40), faceid=288 (cost=40), faceid=286 (cost=40)}
+  /ndn/ua-site/ua nexthops={faceid=282 (cost=20), faceid=288 (cost=40), faceid=286 (cost=40)}
+  /ndn/cz-site/cz nexthops={faceid=280 (cost=10)}
+  /ndn/se-site/se nexthops={faceid=282 (cost=50), faceid=288 (cost=50), faceid=286 (cost=50)}
+RIB:
+  /ndn/svs routes={nexthop=282 origin=static cost=40 flags=child-inherit expires=never, nexthop=288 origin=static cost=40 flags=child-inherit expires=never, nexthop=286 origin=static cost=30 flags=child-inherit expires=never, nexthop=280 origin=static cost=10 flags=child-inherit expires=never, nexthop=284 origin=static cost=30 flags=child-inherit expires=never, nexthop=290 origin=static cost=10 flags=child-inherit expires=never, nexthop=292 origin=static cost=10 flags=child-inherit expires=never}
+  /ndn/al-site/al routes={nexthop=282 origin=static cost=30 flags=child-inherit expires=never, nexthop=288 origin=static cost=50 flags=child-inherit expires=never, nexthop=286 origin=static cost=50 flags=child-inherit expires=never}
+  /ndn/am-site/am routes={nexthop=282 origin=static cost=30 flags=child-inherit expires=never, nexthop=288 origin=static cost=30 flags=child-inherit expires=never, nexthop=286 origin=static cost=30 flags=child-inherit expires=never}
+  /ndn/at-site/at routes={nexthop=282 origin=static cost=10 flags=child-inherit expires=never, nexthop=288 origin=static cost=30 flags=child-inherit expires=never, nexthop=286 origin=static cost=30 flags=child-inherit expires=never}
+  /ndn/az-site/az routes={nexthop=282 origin=static cost=30 flags=child-inherit expires=never, nexthop=288 origin=static cost=30 flags=child-inherit expires=never, nexthop=286 origin=static cost=30 flags=child-inherit expires=never}
+  /ndn/be-site/be routes={nexthop=282 origin=static cost=40 flags=child-inherit expires=never, nexthop=288 origin=static cost=40 flags=child-inherit expires=never, nexthop=286 origin=static cost=40 flags=child-inherit expires=never}
+  /ndn/bg-site/bg routes={nexthop=284 origin=static cost=20 flags=child-inherit expires=never}
+  /ndn/by-site/by routes={nexthop=282 origin=static cost=30 flags=child-inherit expires=never, nexthop=288 origin=static cost=40 flags=child-inherit expires=never, nexthop=286 origin=static cost=40 flags=child-inherit expires=never}
+  /ndn/ch-site/ch routes={nexthop=282 origin=static cost=30 flags=child-inherit expires=never, nexthop=288 origin=static cost=30 flags=child-inherit expires=never, nexthop=286 origin=static cost=30 flags=child-inherit expires=never}
+  /ndn/cy-site/cy routes={nexthop=286 origin=static cost=20 flags=child-inherit expires=never, nexthop=282 origin=static cost=30 flags=child-inherit expires=never, nexthop=288 origin=static cost=30 flags=child-inherit expires=never}
+  /ndn/cz-site/cz routes={nexthop=280 origin=static cost=10 flags=child-inherit expires=never}
+  /ndn/dk-site/dk routes={nexthop=282 origin=static cost=40 flags=child-inherit expires=never, nexthop=288 origin=static cost=40 flags=child-inherit expires=never, nexthop=286 origin=static cost=40 flags=child-inherit expires=never}
+  /ndn/ee-site/ee routes={nexthop=282 origin=static cost=40 flags=child-inherit expires=never, nexthop=288 origin=static cost=40 flags=child-inherit expires=never, nexthop=286 origin=static cost=40 flags=child-inherit expires=never}
+  /ndn/es-site/es routes={nexthop=282 origin=static cost=50 flags=child-inherit expires=never, nexthop=288 origin=static cost=50 flags=child-inherit expires=never, nexthop=286 origin=static cost=50 flags=child-inherit expires=never}
+  /ndn/fi-site/fi routes={nexthop=282 origin=static cost=60 flags=child-inherit expires=never, nexthop=288 origin=static cost=60 flags=child-inherit expires=never, nexthop=286 origin=static cost=60 flags=child-inherit expires=never}
+  /ndn/ge-site/ge routes={nexthop=288 origin=static cost=10 flags=child-inherit expires=never, nexthop=282 origin=static cost=30 flags=child-inherit expires=never, nexthop=286 origin=static cost=30 flags=child-inherit expires=never}
+  /ndn/gr-site/gr routes={nexthop=282 origin=static cost=20 flags=child-inherit expires=never, nexthop=288 origin=static cost=40 flags=child-inherit expires=never, nexthop=286 origin=static cost=40 flags=child-inherit expires=never}
+  /ndn/hr-site/hr routes={nexthop=282 origin=static cost=20 flags=child-inherit expires=never, nexthop=288 origin=static cost=40 flags=child-inherit expires=never, nexthop=286 origin=static cost=40 flags=child-inherit expires=never}
+  /ndn/ie-site/ie routes={nexthop=286 origin=static cost=40 flags=child-inherit expires=never, nexthop=282 origin=static cost=50 flags=child-inherit expires=never, nexthop=288 origin=static cost=50 flags=child-inherit expires=never}
+  /ndn/il-site/il routes={nexthop=282 origin=static cost=30 flags=child-inherit expires=never, nexthop=288 origin=static cost=30 flags=child-inherit expires=never, nexthop=286 origin=static cost=30 flags=child-inherit expires=never}
+  /ndn/is-site/is routes={nexthop=282 origin=static cost=50 flags=child-inherit expires=never, nexthop=288 origin=static cost=50 flags=child-inherit expires=never, nexthop=286 origin=static cost=50 flags=child-inherit expires=never}
+  /ndn/it-site/it routes={nexthop=282 origin=static cost=20 flags=child-inherit expires=never, nexthop=288 origin=static cost=40 flags=child-inherit expires=never, nexthop=286 origin=static cost=40 flags=child-inherit expires=never}
+  /ndn/lt-site/lt routes={nexthop=282 origin=static cost=60 flags=child-inherit expires=never, nexthop=288 origin=static cost=60 flags=child-inherit expires=never, nexthop=286 origin=static cost=60 flags=child-inherit expires=never}
+  /ndn/lu-site/lu routes={nexthop=282 origin=static cost=30 flags=child-inherit expires=never, nexthop=288 origin=static cost=30 flags=child-inherit expires=never, nexthop=286 origin=static cost=30 flags=child-inherit expires=never}
+  /ndn/lv-site/lv routes={nexthop=282 origin=static cost=50 flags=child-inherit expires=never, nexthop=288 origin=static cost=50 flags=child-inherit expires=never, nexthop=286 origin=static cost=50 flags=child-inherit expires=never}
+  /ndn/md-site/md routes={nexthop=284 origin=static cost=20 flags=child-inherit expires=never}
+  /ndn/me-site/me routes={nexthop=292 origin=static cost=10 flags=child-inherit expires=never}
+  /ndn/mk-site/mk routes={nexthop=284 origin=static cost=30 flags=child-inherit expires=never}
+  /ndn/mt-site/mt routes={nexthop=282 origin=static cost=30 flags=child-inherit expires=never, nexthop=288 origin=static cost=50 flags=child-inherit expires=never, nexthop=286 origin=static cost=50 flags=child-inherit expires=never}
+  /ndn/nl-site/nl routes={nexthop=282 origin=static cost=30 flags=child-inherit expires=never, nexthop=288 origin=static cost=30 flags=child-inherit expires=never, nexthop=286 origin=static cost=30 flags=child-inherit expires=never}
+  /ndn/no-site/no routes={nexthop=282 origin=static cost=60 flags=child-inherit expires=never, nexthop=288 origin=static cost=60 flags=child-inherit expires=never, nexthop=286 origin=static cost=60 flags=child-inherit expires=never}
+  /ndn/pl-site/pl routes={nexthop=282 origin=static cost=20 flags=child-inherit expires=never, nexthop=288 origin=static cost=30 flags=child-inherit expires=never, nexthop=286 origin=static cost=30 flags=child-inherit expires=never}
+  /ndn/pt-site/pt routes={nexthop=286 origin=static cost=40 flags=child-inherit expires=never, nexthop=282 origin=static cost=50 flags=child-inherit expires=never, nexthop=288 origin=static cost=50 flags=child-inherit expires=never}
+  /ndn/ro-site/ro routes={nexthop=284 origin=static cost=10 flags=child-inherit expires=never}
+  /ndn/rs-site/rs routes={nexthop=290 origin=static cost=10 flags=child-inherit expires=never}
+  /ndn/se-site/se routes={nexthop=282 origin=static cost=50 flags=child-inherit expires=never, nexthop=288 origin=static cost=50 flags=child-inherit expires=never, nexthop=286 origin=static cost=50 flags=child-inherit expires=never}
+  /ndn/si-site/si routes={nexthop=282 origin=static cost=20 flags=child-inherit expires=never, nexthop=288 origin=static cost=40 flags=child-inherit expires=never, nexthop=286 origin=static cost=40 flags=child-inherit expires=never}
+  /ndn/sk-site/sk routes={nexthop=282 origin=static cost=20 flags=child-inherit expires=never, nexthop=288 origin=static cost=40 flags=child-inherit expires=never, nexthop=286 origin=static cost=40 flags=child-inherit expires=never}
+  /ndn/tr-site/tr routes={nexthop=286 origin=static cost=10 flags=child-inherit expires=never, nexthop=282 origin=static cost=30 flags=child-inherit expires=never, nexthop=288 origin=static cost=30 flags=child-inherit expires=never}
+  /ndn/ua-site/ua routes={nexthop=282 origin=static cost=20 flags=child-inherit expires=never, nexthop=288 origin=static cost=40 flags=child-inherit expires=never, nexthop=286 origin=static cost=40 flags=child-inherit expires=never}
+  /ndn/uk-site/uk routes={nexthop=286 origin=static cost=30 flags=child-inherit expires=never, nexthop=282 origin=static cost=40 flags=child-inherit expires=never, nexthop=288 origin=static cost=40 flags=child-inherit expires=never}
+  /ndn/de1-site/de1 routes={nexthop=282 origin=static cost=30 flags=child-inherit expires=never, nexthop=288 origin=static cost=30 flags=child-inherit expires=never, nexthop=286 origin=static cost=30 flags=child-inherit expires=never}
+  /ndn/de2-site/de2 routes={nexthop=282 origin=static cost=20 flags=child-inherit expires=never, nexthop=288 origin=static cost=20 flags=child-inherit expires=never, nexthop=286 origin=static cost=20 flags=child-inherit expires=never}
+  /ndn/fr1-site/fr1 routes={nexthop=282 origin=static cost=40 flags=child-inherit expires=never, nexthop=288 origin=static cost=40 flags=child-inherit expires=never, nexthop=286 origin=static cost=40 flags=child-inherit expires=never}
+  /ndn/fr2-site/fr2 routes={nexthop=282 origin=static cost=30 flags=child-inherit expires=never, nexthop=288 origin=static cost=50 flags=child-inherit expires=never, nexthop=286 origin=static cost=50 flags=child-inherit expires=never}
+  /localhost/nfd routes={nexthop=263 origin=app cost=0 flags=child-inherit expires=never}
+CS information:
+  capacity=65536
+     admit=on
+     serve=on
+  nEntries=1
+     nHits=0
+   nMisses=12734
+Strategy choices:
+  prefix=/ strategy=/localhost/nfd/strategy/best-route/v=5
+  prefix=/ndn/svs strategy=/localhost/nfd/strategy/multicast/v=5
+  prefix=/localhost strategy=/localhost/nfd/strategy/multicast/v=5
+  prefix=/ndn/broadcast strategy=/localhost/nfd/strategy/multicast/v=5
+  prefix=/localhost/nfd strategy=/localhost/nfd/strategy/best-route/v=5

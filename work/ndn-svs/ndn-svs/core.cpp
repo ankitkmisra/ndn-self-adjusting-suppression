@@ -24,6 +24,7 @@
 
 #include <chrono>
 #include <iostream>
+#include <sstream>
 
 #ifdef NDN_SVS_COMPRESSION
 #include <boost/iostreams/copy.hpp>
@@ -39,12 +40,14 @@ SVSyncCore::SVSyncCore(ndn::Face& face,
                        const UpdateCallback& onUpdate,
                        const SecurityOptions& securityOptions,
                        const NodeID& nid,
-                       int timerSetting)
+                       int timerSetting,
+                       int timerScaling)
   : m_face(face)
   , m_syncPrefix(syncPrefix)
   , m_securityOptions(securityOptions)
   , m_id(nid)
   , m_onUpdate(onUpdate)
+  , m_suppressionDict()
   , m_maxSuppressionTime(200_ms)
   , m_periodicSyncTime(30_s)
   , m_periodicSyncJitter(0.1)
@@ -56,6 +59,7 @@ SVSyncCore::SVSyncCore(ndn::Face& face,
   , m_scheduler(m_face.getIoContext())
   , m_timerSetting(timerSetting) // Initialize timer setting
   , m_propagationDelays() // Initialize the propagation delays dictionary
+  , m_timerScaling(timerScaling)
 {
   // Register sync interest filter
   m_syncRegisteredPrefix =
@@ -88,9 +92,7 @@ SVSyncCore::updateMaxSuppressionTime()
     // If timer_setting is 0, use the fixed suppression time (200 ms)
     // This should not be required, but just a sanity check
   }
-
-  else if (m_timerSetting == 1) {
-
+  else {
     std::lock_guard<std::mutex> lock(m_propagationDelaysMutex);
 
     if (!m_propagationDelays.empty()) {
@@ -115,7 +117,7 @@ SVSyncCore::updateMaxSuppressionTime()
       uint64_t averageDelay = totalDelay / totalCount;
 
       // Update m_maxSuppressionTime to the average delay
-      m_maxSuppressionTime = ndn::time::milliseconds(averageDelay * 3);
+      m_maxSuppressionTime = ndn::time::milliseconds(averageDelay * m_timerScaling);
 
       // Update the distributions
       m_intrReplyDist = std::uniform_int_distribution<>(0, m_maxSuppressionTime.count());
@@ -210,15 +212,38 @@ SVSyncCore::onSyncInterestValidated(const Interest& interest)
 #endif
 
   // Parse sender node ID and timestamp at which it was sent, if timer setting is not 0
-  std::string senderNodeId;
-  uint64_t timestamp = 0;
+  std::string senderNodeId = "";
+  uint64_t timestamp = 0, time_diff = 0;
   bool isSuppressionTriggered = false;
+  std::unordered_map<std::string, uint64_t> recv_suppressionDict;
   if (m_timerSetting != 0) {
     try {
       senderNodeId = ndn::encoding::readString(params.get(tlv::SenderNodeId));
+
       timestamp = ndn::encoding::readNonNegativeInteger(params.get(tlv::Timestamp));
+      auto now = std::chrono::system_clock::now();
+      auto now_ms = std::chrono::time_point_cast<std::chrono::milliseconds>(now);
+      auto epoch = now_ms.time_since_epoch();
+      auto current_time = std::chrono::duration_cast<std::chrono::milliseconds>(epoch).count();
+      time_diff = current_time - timestamp;
+
       if (m_timerSetting == 2) {
         isSuppressionTriggered = (ndn::encoding::readNonNegativeInteger(params.get(tlv::SuppressionFlag)) == 1);
+        // if (isSuppressionTriggered)
+        //   std::cout << "Received suppression interest from " << senderNodeId << std::endl;
+
+        std::string recv_str_suppressionDict = ndn::encoding::readString(params.get(tlv::SuppressionDict));
+        std::istringstream iss(recv_str_suppressionDict);
+        std::string entry;
+        while (getline(iss, entry, ',')) {
+          size_t pos = entry.find(':');
+          if (pos != std::string::npos) {
+              std::string key = entry.substr(0, pos);
+              uint64_t value = stoull(entry.substr(pos + 1));
+              recv_suppressionDict[key] = value;
+              // std::cout << "Key: " << key << ", Value: " << value << std::endl;
+          }
+        }
       }
     } catch (ndn::tlv::Error& e) {
       std::cerr << "Error parsing something: " << e.what() << std::endl;
@@ -245,23 +270,12 @@ SVSyncCore::onSyncInterestValidated(const Interest& interest)
   }
 
   if (m_timerSetting == 1) {
-    if (timestamp != 0 && senderNodeId != m_id.toUri()) {
-      auto now = std::chrono::system_clock::now();
-      auto now_ms = std::chrono::time_point_cast<std::chrono::milliseconds>(now);
-      auto epoch = now_ms.time_since_epoch();
-      auto current_time = std::chrono::duration_cast<std::chrono::milliseconds>(epoch).count();
-
-      auto time_diff = current_time - timestamp;
-
+    if (senderNodeId != m_id.toUri()) {
         // Update the propagation delays queue for the sender node ID
         {
           std::lock_guard<std::mutex> lock(m_propagationDelaysMutex);
-
-          // Get the queue for the sender node ID (or create it if it doesn't exist)
           auto& delays = m_propagationDelays[senderNodeId];
-
-          // Add the new delay to the queue
-          delays.push_back(time_diff);
+          delays.push_back(std::min((int)(time_diff), 200));
 
           // Keep only the last 5 delays
           if (delays.size() > 5) {
@@ -271,6 +285,32 @@ SVSyncCore::onSyncInterestValidated(const Interest& interest)
 
         // Update m_maxSuppressionTime based on the average propagation delay
         updateMaxSuppressionTime();
+    }
+  }
+
+  if (m_timerSetting == 2 && isSuppressionTriggered) {
+    if (senderNodeId != m_id.toUri()) {
+      auto it = recv_suppressionDict.find(m_id.toUri());
+      if (it != recv_suppressionDict.end()) {
+        auto recv_time_diff = it->second;
+
+        // std::cout << std::endl;
+        // std::cout << senderNodeId << std::endl;
+        // std::cout << time_diff << std::endl;
+        // std::cout << recv_time_diff << std::endl;
+  
+        {
+          std::lock_guard<std::mutex> lock(m_propagationDelaysMutex);
+          auto& delays = m_propagationDelays[senderNodeId];
+          delays.push_back(std::min((int)((time_diff + recv_time_diff) / 2), 200));
+
+          // Keep only the last 1 delays
+          if (delays.size() > 3) {
+            delays.pop_front();
+          }
+        }
+        updateMaxSuppressionTime();
+      }
     }
   }
 
@@ -285,7 +325,7 @@ SVSyncCore::onSyncInterestValidated(const Interest& interest)
   }
 
   // Try to record; the call will check if in suppression state
-  if (recordVector(*vvOther))
+  if (recordVector(*vvOther, senderNodeId, time_diff))
     return;
 
   // If incoming state identical/newer to local vector, reset timer
@@ -293,7 +333,7 @@ SVSyncCore::onSyncInterestValidated(const Interest& interest)
   if (!result.myVectorNew) {
     retxSyncInterest(false, 0);
   } else {
-    enterSuppressionState(*vvOther);
+    enterSuppressionState(*vvOther, senderNodeId, time_diff);
     // Check how much time is left on the timer,
     // reset to ~m_intrReplyDist if more than that.
     int delay = m_intrReplyDist(m_rng);
@@ -318,10 +358,17 @@ SVSyncCore::retxSyncInterest(bool send, unsigned int delay)
     // than recorded interests
     if (!m_recordedVv)
       sendSyncInterest();
-    else if (mergeStateVector(*m_recordedVv).myVectorNew)
+    else if (mergeStateVector(*m_recordedVv).myVectorNew) {
+      // std::cout << "Sending suppression interest" << std::endl;
       sendSyncInterest(true);
+    }
+      
       
     m_recordedVv = nullptr;
+    if (m_timerSetting == 2) {
+      std::lock_guard<std::mutex> lock(m_suppressionDictMutex);
+      m_suppressionDict.clear();
+    }
   }
 
   if (delay == 0)
@@ -371,6 +418,20 @@ SVSyncCore::sendSyncInterest(bool isSuppressionTriggered)
         // Add suppression flag
         uint64_t int_isSuppressionTriggered = isSuppressionTriggered ? 1 : 0;
         length += ndn::encoding::prependNonNegativeIntegerBlock(enc, tlv::SuppressionFlag, int_isSuppressionTriggered);
+
+        // Add string representation of list of suppressed nodes (with timestamps of suppression dict addition)
+        std::lock_guard<std::mutex> lock(m_suppressionDictMutex);
+        std::ostringstream str_suppressionDict;
+        bool first = true;
+        for (const auto& [key, value] : m_suppressionDict) {
+            if (!first)
+                str_suppressionDict << ","; // Separate entries
+            str_suppressionDict << key << ":" << value;
+            // std::cout << "Key: " << key << ", Value: " << value << std::endl;
+            
+            first = false;
+        }
+        length += ndn::encoding::prependStringBlock(enc, tlv::SuppressionDict, str_suppressionDict.str());
       }
     }
 
@@ -509,7 +570,7 @@ SVSyncCore::getCurrentTime() const
 }
 
 bool
-SVSyncCore::recordVector(const VersionVector& vvOther)
+SVSyncCore::recordVector(const VersionVector& vvOther, std::string senderNodeId, uint64_t time_diff)
 {
   std::lock_guard<std::mutex> lock(m_recordedVvMutex);
 
@@ -528,16 +589,30 @@ SVSyncCore::recordVector(const VersionVector& vvOther)
     }
   }
 
+  if (m_timerSetting == 2) {
+    std::lock_guard<std::mutex> lock(m_suppressionDictMutex);
+    if (senderNodeId == "" || time_diff == 0)
+      std::cerr << "Error!" << std::endl;
+    m_suppressionDict[senderNodeId] = time_diff;
+  }
+
   return true;
 }
 
 void
-SVSyncCore::enterSuppressionState(const VersionVector& vvOther)
+SVSyncCore::enterSuppressionState(const VersionVector& vvOther, std::string senderNodeId, uint64_t time_diff)
 {
   std::lock_guard<std::mutex> lock(m_recordedVvMutex);
 
   if (!m_recordedVv)
     m_recordedVv = std::make_unique<VersionVector>(vvOther);
+
+  if (m_timerSetting == 2) {
+    std::lock_guard<std::mutex> lock(m_suppressionDictMutex);
+    if (senderNodeId == "" || time_diff == 0 || !m_suppressionDict.empty())
+      std::cerr << "Error!" << std::endl;
+    m_suppressionDict[senderNodeId] = time_diff;
+  }
 }
 
 } // namespace ndn::svs

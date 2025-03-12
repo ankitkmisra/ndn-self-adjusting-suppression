@@ -31,7 +31,8 @@ enum : uint32_t
   LzmaBlock = 211,
   Timestamp = 212,
   SenderNodeId = 213,
-  SuppressionFlag = 214
+  SuppressionFlag = 214,
+  SuppressionDict = 215
 };
 
 } // namespace ndn::svs::tlv
