@@ -1,6 +1,6 @@
 argv = ['./waf', 'configure', '--with-examples']
 config_cmd = 'configure'
-environ = {'HOSTNAME': '57e1490ffdb2', 'LD_LIBRARY_PATH': '/mini-ndn/work/ndn-svs/build:', 'HOME': '/root', 'OLDPWD': '/mini-ndn', 'TERM': 'vt100', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'PWD': '/mini-ndn/work/ndn-svs', 'LC_CTYPE': 'C.UTF-8'}
+environ = {'HOSTNAME': 'e015863709fe', 'LD_LIBRARY_PATH': '/mini-ndn/work/ndn-svs/build:', 'HOME': '/root', 'OLDPWD': '/mini-ndn/work', 'TERM': 'vt100', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'PWD': '/mini-ndn/work/ndn-svs', 'LC_CTYPE': 'C.UTF-8'}
 files = ['/mini-ndn/work/ndn-svs/wscript']
 hash = b'\x9e\xf5\x06\xa5\x15\x03wQ\x01\xd2\xb1\x9a^J\x85V'
 launch_dir = '/mini-ndn/work/ndn-svs'

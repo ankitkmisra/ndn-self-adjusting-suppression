@@ -334,13 +334,45 @@ SVSyncCore::onSyncInterestValidated(const Interest& interest)
     retxSyncInterest(false, 0);
   } else {
     enterSuppressionState(*vvOther, senderNodeId, time_diff);
-    // Check how much time is left on the timer,
-    // reset to ~m_intrReplyDist if more than that.
-    int delay = m_intrReplyDist(m_rng);
+    // // Check how much time is left on the timer,
+    // // reset to ~m_intrReplyDist if more than that.
+    // int delay = m_intrReplyDist(m_rng);
 
-    // Curve the delay for better suppression in large groups
-    // TODO: efficient curve depends on number of active nodes
-    delay = suppressionCurve(m_maxSuppressionTime.count(), delay);
+    // // Curve the delay for better suppression in large groups
+    // // TODO: efficient curve depends on number of active nodes
+    // delay = suppressionCurve(m_maxSuppressionTime.count(), delay);
+
+    int delay;
+
+    if (m_timerSetting > 0) {
+      std::lock_guard<std::mutex> lock(m_propagationDelaysMutex);
+
+      if (m_propagationDelays.count(senderNodeId)) {
+        auto sender_prop_times = m_propagationDelays[senderNodeId];
+        uint64_t total_delay = 0;
+        size_t total_count = 0;
+        for (uint64_t prop_delay : sender_prop_times) {
+          total_delay += prop_delay;
+          total_count += 1;
+        }
+        if (total_count == 0) {
+          delay = m_intrReplyDist(m_rng);
+          delay = suppressionCurve(m_maxSuppressionTime.count(), delay);
+        } else {
+          uint64_t average_delay = total_delay / total_count;
+          time::milliseconds max_suppression_time = ndn::time::milliseconds(average_delay * m_timerScaling);
+          std::uniform_int_distribution<> intr_reply_dist = std::uniform_int_distribution<>(0, max_suppression_time.count());
+          delay = intr_reply_dist(m_rng);
+          delay = suppressionCurve(max_suppression_time.count(), delay);
+        }
+      } else {
+        delay = m_intrReplyDist(m_rng);
+        delay = suppressionCurve(m_maxSuppressionTime.count(), delay);
+      }
+    } else {
+      delay = m_intrReplyDist(m_rng);
+      delay = suppressionCurve(m_maxSuppressionTime.count(), delay);
+    }
 
     if (getCurrentTime() + delay * 1000 < m_nextSyncInterest) {
       retxSyncInterest(false, delay);

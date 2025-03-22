@@ -41,15 +41,15 @@ from mininet.node import OVSController
 from tqdm import tqdm
 
 # ======================= CONFIGURATION ============================
-OVERALL_RUN = 4
+OVERALL_RUN = 6
 PUB_TIMING_VALS = [45000]
 TIMER_SETTING_VALS = [0]
 RUN_NUMBER_VALS = [1]
-DROP_RATE_VALS = [50] #[0,25,50]
-DELAY_VALS = [10]
+DROP_RATE_VALS = [25] #[0,25,50]
+DELAY_VALS = [2.5,5,20,40]
 TIMER_SCALING_VALS = [3]
-LOG_PREFIX = "GEANT37"
-TOPO_FILE = "/mini-ndn/examples/geant37.conf" # Update this path as needed
+LOG_PREFIX = "GEANT"
+TOPO_FILE = "/mini-ndn/examples/geant.conf" # Update this path as needed
 
 # SVS executable path
 SYNC_EXEC = "/mini-ndn/work/ndn-svs/build/examples/core"  # Update this path as needed
@@ -67,7 +67,7 @@ TIMER_SCALING = 0
 DELAY = 0
 
 def getLogPath():
-    LOG_NAME = "{}-timer{}-drop{}-scaling{}".format(LOG_PREFIX, TIMER_SETTING, DROP_RATE, TIMER_SCALING)
+    LOG_NAME = "{}-timer{}-drop{}-scaling{}-delay{}".format(LOG_PREFIX, TIMER_SETTING, DROP_RATE, TIMER_SCALING, DELAY)
     logpath = LOG_MAIN_DIRECTORY + LOG_NAME
 
     if not os.path.exists(logpath):
@@ -159,8 +159,8 @@ if __name__ == '__main__':
                             # if TIMER_SETTING == 0 and TIMER_SCALING > 2:
                             #     continue
 
-                            if DROP_RATE == 0 and (TIMER_SETTING > 0 or TIMER_SCALING > 2):
-                                continue
+                            # if DROP_RATE == 0 and (TIMER_SETTING > 0 or TIMER_SCALING > 3):
+                            #     continue
 
                             for link in ndn.net.links:
                                 for intf in link.intf1, link.intf2:

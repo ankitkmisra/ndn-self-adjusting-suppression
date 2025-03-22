@@ -1,0 +1,777 @@
+SVS client starting: /ndn/cy-site/cy/svs_core/cy
+Sending Sync interest
+Received update: /ndn/mk-site/mk/svs_core/mk=1, 1742581428990
+Max suppression time updated to: 600
+Received update: /ndn/ro-site/ro/svs_core/ro=1, 1742581430893
+Received update: /ndn/es-site/es/svs_core/es=1, 1742581435948
+Received update: /ndn/ie-site/ie/svs_core/ie=1, 1742581435948
+Received update: /ndn/is-site/is/svs_core/is=1, 1742581436114
+Received update: /ndn/rs-site/rs/svs_core/rs=1, 1742581436462
+Received update: /ndn/md-site/md/svs_core/md=1, 1742581437015
+Received update: /ndn/be-site/be/svs_core/be=1, 1742581437168
+Received update: /ndn/pl-site/pl/svs_core/pl=1, 1742581439654
+Received update: /ndn/de2-site/de2/svs_core/de2=1, 1742581441992
+Received update: /ndn/at-site/at/svs_core/at=1, 1742581443218
+Received update: /ndn/sk-site/sk/svs_core/sk=1, 1742581443428
+Received update: /ndn/ua-site/ua/svs_core/ua=1, 1742581443866
+Received update: /ndn/dk-site/dk/svs_core/dk=1, 1742581444537
+Received update: /ndn/al-site/al/svs_core/al=1, 1742581444658
+Received update: /ndn/by-site/by/svs_core/by=1, 1742581444658
+Received update: /ndn/it-site/it/svs_core/it=1, 1742581444658
+Received update: /ndn/pt-site/pt/svs_core/pt=1, 1742581444988
+Received update: /ndn/nl-site/nl/svs_core/nl=1, 1742581445631
+Received update: /ndn/ee-site/ee/svs_core/ee=1, 1742581445951
+Received update: /ndn/gr-site/gr/svs_core/gr=1, 1742581449680
+Received update: /ndn/lt-site/lt/svs_core/lt=1, 1742581449680
+Received update: /ndn/lv-site/lv/svs_core/lv=1, 1742581456331
+Received update: /ndn/de1-site/de1/svs_core/de1=1, 1742581456331
+Received update: /ndn/cz-site/cz/svs_core/cz=1, 1742581456630
+Received update: /ndn/il-site/il/svs_core/il=1, 1742581456630
+Received update: /ndn/tr-site/tr/svs_core/tr=1, 1742581456630
+Published sequence number: /ndn/cy-site/cy/svs_core/cy=1, 1742581463044
+Sending Sync interest
+Received update: /ndn/az-site/az/svs_core/az=1, 1742581463904
+Received update: /ndn/bg-site/bg/svs_core/bg=1, 1742581464779
+Received update: /ndn/hr-site/hr/svs_core/hr=1, 1742581465597
+Received update: /ndn/se-site/se/svs_core/se=1, 1742581465597
+Received update: /ndn/si-site/si/svs_core/si=1, 1742581465597
+Received update: /ndn/fr2-site/fr2/svs_core/fr2=1, 1742581470502
+Received update: /ndn/ch-site/ch/svs_core/ch=1, 1742581471512
+Received update: /ndn/ge-site/ge/svs_core/ge=1, 1742581471512
+Received update: /ndn/hu-site/hu/svs_core/hu=1, 1742581471512
+Received update: /ndn/me-site/me/svs_core/me=1, 1742581471512
+Received update: /ndn/uk-site/uk/svs_core/uk=1, 1742581471512
+Received update: /ndn/ie-site/ie/svs_core/ie=2, 1742581477984
+Received update: /ndn/lu-site/lu/svs_core/lu=1, 1742581478195
+Received update: /ndn/ro-site/ro/svs_core/ro=2, 1742581479550
+Received update: /ndn/md-site/md/svs_core/md=2, 1742581482000
+Received update: /ndn/by-site/by/svs_core/by=2, 1742581483996
+Received update: /ndn/pl-site/pl/svs_core/pl=2, 1742581483996
+Received update: /ndn/cz-site/cz/svs_core/cz=2, 1742581500955
+Received update: /ndn/tr-site/tr/svs_core/tr=2, 1742581500955
+Received update: /ndn/de2-site/de2/svs_core/de2=2, 1742581500955
+Received update: /ndn/al-site/al/svs_core/al=2, 1742581501085
+Received update: /ndn/es-site/es/svs_core/es=2, 1742581501085
+Received update: /ndn/it-site/it/svs_core/it=2, 1742581501085
+Received update: /ndn/mt-site/mt/svs_core/mt=1, 1742581501085
+Published sequence number: /ndn/cy-site/cy/svs_core/cy=2, 1742581508046
+Sending Sync interest
+Received update: /ndn/be-site/be/svs_core/be=2, 1742581516130
+Received update: /ndn/ua-site/ua/svs_core/ua=2, 1742581516130
+Received update: /ndn/uk-site/uk/svs_core/uk=2, 1742581516130
+Received update: /ndn/fr1-site/fr1/svs_core/fr1=1, 1742581516130
+Received update: /ndn/at-site/at/svs_core/at=2, 1742581516155
+Received update: /ndn/bg-site/bg/svs_core/bg=2, 1742581516155
+Received update: /ndn/hr-site/hr/svs_core/hr=2, 1742581516155
+Received update: /ndn/hu-site/hu/svs_core/hu=2, 1742581516155
+Received update: /ndn/mk-site/mk/svs_core/mk=2, 1742581516155
+Received update: /ndn/fr2-site/fr2/svs_core/fr2=2, 1742581516155
+Received update: /ndn/ge-site/ge/svs_core/ge=2, 1742581516262
+Received update: /ndn/sk-site/sk/svs_core/sk=2, 1742581516262
+Sending Sync interest
+Received update: /ndn/lu-site/lu/svs_core/lu=2, 1742581518180
+Sending Sync interest
+Received update: /ndn/md-site/md/svs_core/md=3, 1742581526813
+Sending Sync interest
+Received update: /ndn/be-site/be/svs_core/be=3, 1742581528772
+Received update: /ndn/ch-site/ch/svs_core/ch=2, 1742581528772
+Received update: /ndn/dk-site/dk/svs_core/dk=2, 1742581528772
+Received update: /ndn/dk-site/dk/svs_core/dk=3, 1742581528772
+Received update: /ndn/ee-site/ee/svs_core/ee=2, 1742581528772
+Received update: /ndn/fi-site/fi/svs_core/fi=1, 1742581528772
+Received update: /ndn/gr-site/gr/svs_core/gr=2, 1742581528772
+Received update: /ndn/il-site/il/svs_core/il=2, 1742581528772
+Received update: /ndn/is-site/is/svs_core/is=2, 1742581528772
+Received update: /ndn/is-site/is/svs_core/is=3, 1742581528772
+Received update: /ndn/lt-site/lt/svs_core/lt=2, 1742581528772
+Received update: /ndn/lv-site/lv/svs_core/lv=2, 1742581528772
+Received update: /ndn/mt-site/mt/svs_core/mt=2, 1742581528772
+Received update: /ndn/nl-site/nl/svs_core/nl=2, 1742581528772
+Received update: /ndn/pt-site/pt/svs_core/pt=2, 1742581528772
+Received update: /ndn/pt-site/pt/svs_core/pt=3, 1742581528772
+Received update: /ndn/de1-site/de1/svs_core/de1=2, 1742581528772
+Received update: /ndn/fr1-site/fr1/svs_core/fr1=2, 1742581528772
+Received update: /ndn/ee-site/ee/svs_core/ee=3, 1742581529460
+Received update: /ndn/me-site/me/svs_core/me=2, 1742581529460
+Sending Sync interest
+Received update: /ndn/az-site/az/svs_core/az=2, 1742581532260
+Received update: /ndn/pl-site/pl/svs_core/pl=3, 1742581532260
+Received update: /ndn/rs-site/rs/svs_core/rs=2, 1742581532260
+Received update: /ndn/rs-site/rs/svs_core/rs=3, 1742581532260
+Received update: /ndn/de2-site/de2/svs_core/de2=3, 1742581532260
+Published sequence number: /ndn/cy-site/cy/svs_core/cy=3, 1742581553052
+Sending Sync interest
+Max suppression time updated to: 345
+Received update: /ndn/at-site/at/svs_core/at=3, 1742581553298
+Received update: /ndn/si-site/si/svs_core/si=2, 1742581553298
+Received update: /ndn/sk-site/sk/svs_core/sk=3, 1742581553298
+Received update: /ndn/tr-site/tr/svs_core/tr=3, 1742581553298
+Received update: /ndn/ua-site/ua/svs_core/ua=3, 1742581553298
+Received update: /ndn/bg-site/bg/svs_core/bg=3, 1742581555521
+Received update: /ndn/hr-site/hr/svs_core/hr=3, 1742581555521
+Received update: /ndn/mk-site/mk/svs_core/mk=3, 1742581555521
+Received update: /ndn/ro-site/ro/svs_core/ro=3, 1742581555521
+Received update: /ndn/si-site/si/svs_core/si=3, 1742581555521
+Received update: /ndn/ie-site/ie/svs_core/ie=3, 1742581555723
+Received update: /ndn/nl-site/nl/svs_core/nl=3, 1742581555723
+Received update: /ndn/al-site/al/svs_core/al=3, 1742581569432
+Received update: /ndn/am-site/am/svs_core/am=1, 1742581569432
+Received update: /ndn/am-site/am/svs_core/am=2, 1742581569432
+Received update: /ndn/am-site/am/svs_core/am=3, 1742581569432
+Received update: /ndn/by-site/by/svs_core/by=3, 1742581569432
+Received update: /ndn/ch-site/ch/svs_core/ch=3, 1742581569432
+Received update: /ndn/cz-site/cz/svs_core/cz=3, 1742581569432
+Received update: /ndn/es-site/es/svs_core/es=3, 1742581569432
+Received update: /ndn/gr-site/gr/svs_core/gr=3, 1742581569432
+Received update: /ndn/hu-site/hu/svs_core/hu=3, 1742581569432
+Received update: /ndn/it-site/it/svs_core/it=3, 1742581569432
+Received update: /ndn/lt-site/lt/svs_core/lt=3, 1742581569432
+Received update: /ndn/mt-site/mt/svs_core/mt=3, 1742581569432
+Received update: /ndn/fr2-site/fr2/svs_core/fr2=3, 1742581569432
+Received update: /ndn/uk-site/uk/svs_core/uk=3, 1742581569640
+Received update: /ndn/ee-site/ee/svs_core/ee=4, 1742581573108
+Received update: /ndn/de1-site/de1/svs_core/de1=3, 1742581573108
+Sending Sync interest
+Received update: /ndn/ge-site/ge/svs_core/ge=3, 1742581573616
+Received update: /ndn/md-site/md/svs_core/md=4, 1742581573616
+Received update: /ndn/mk-site/mk/svs_core/mk=4, 1742581573616
+Received update: /ndn/pl-site/pl/svs_core/pl=4, 1742581573616
+Received update: /ndn/ro-site/ro/svs_core/ro=4, 1742581573616
+Sending Sync interest
+Received update: /ndn/at-site/at/svs_core/at=4, 1742581578254
+Received update: /ndn/by-site/by/svs_core/by=4, 1742581578254
+Received update: /ndn/de2-site/de2/svs_core/de2=4, 1742581578254
+Received update: /ndn/be-site/be/svs_core/be=4, 1742581578595
+Received update: /ndn/es-site/es/svs_core/es=4, 1742581578595
+Received update: /ndn/fr1-site/fr1/svs_core/fr1=3, 1742581578595
+Received update: /ndn/ie-site/ie/svs_core/ie=4, 1742581578836
+Published sequence number: /ndn/cy-site/cy/svs_core/cy=4, 1742581598053
+Sending Sync interest
+Received update: /ndn/az-site/az/svs_core/az=3, 1742581599073
+Received update: /ndn/az-site/az/svs_core/az=4, 1742581599073
+Received update: /ndn/nl-site/nl/svs_core/nl=4, 1742581599073
+Sending Sync interest
+Received update: /ndn/it-site/it/svs_core/it=4, 1742581599629
+Received update: /ndn/tr-site/tr/svs_core/tr=4, 1742581599629
+Received update: /ndn/bg-site/bg/svs_core/bg=4, 1742581600680
+Received update: /ndn/gr-site/gr/svs_core/gr=4, 1742581600680
+Received update: /ndn/si-site/si/svs_core/si=4, 1742581600680
+Received update: /ndn/al-site/al/svs_core/al=4, 1742581601700
+Received update: /ndn/cz-site/cz/svs_core/cz=4, 1742581601700
+Received update: /ndn/lt-site/lt/svs_core/lt=4, 1742581601700
+Received update: /ndn/lu-site/lu/svs_core/lu=3, 1742581601700
+Received update: /ndn/mt-site/mt/svs_core/mt=4, 1742581601700
+Received update: /ndn/sk-site/sk/svs_core/sk=4, 1742581601700
+Received update: /ndn/ua-site/ua/svs_core/ua=4, 1742581601700
+Received update: /ndn/il-site/il/svs_core/il=3, 1742581602195
+Received update: /ndn/il-site/il/svs_core/il=4, 1742581602195
+Received update: /ndn/uk-site/uk/svs_core/uk=4, 1742581606152
+Received update: /ndn/dk-site/dk/svs_core/dk=4, 1742581623066
+Received update: /ndn/ge-site/ge/svs_core/ge=4, 1742581623066
+Received update: /ndn/hr-site/hr/svs_core/hr=4, 1742581623066
+Received update: /ndn/lv-site/lv/svs_core/lv=3, 1742581623066
+Received update: /ndn/lv-site/lv/svs_core/lv=4, 1742581623066
+Received update: /ndn/sk-site/sk/svs_core/sk=5, 1742581623066
+Received update: /ndn/de1-site/de1/svs_core/de1=4, 1742581623066
+Received update: /ndn/ch-site/ch/svs_core/ch=4, 1742581623271
+Received update: /ndn/hu-site/hu/svs_core/hu=4, 1742581623271
+Received update: /ndn/de2-site/de2/svs_core/de2=5, 1742581623271
+Received update: /ndn/fr1-site/fr1/svs_core/fr1=4, 1742581623271
+Received update: /ndn/at-site/at/svs_core/at=5, 1742581624218
+Received update: /ndn/ua-site/ua/svs_core/ua=5, 1742581624218
+Received update: /ndn/nl-site/nl/svs_core/nl=5, 1742581625880
+Received update: /ndn/pl-site/pl/svs_core/pl=5, 1742581625880
+Received update: /ndn/lv-site/lv/svs_core/lv=5, 1742581631900
+Received update: /ndn/lu-site/lu/svs_core/lu=4, 1742581632000
+Received update: /ndn/tr-site/tr/svs_core/tr=5, 1742581632931
+Received update: /ndn/il-site/il/svs_core/il=5, 1742581634213
+Received update: /ndn/ro-site/ro/svs_core/ro=5, 1742581634311
+Published sequence number: /ndn/cy-site/cy/svs_core/cy=5, 1742581643060
+Sending Sync interest
+Received update: /ndn/hr-site/hr/svs_core/hr=5, 1742581645716
+Sending Sync interest
+Received update: /ndn/me-site/me/svs_core/me=3, 1742581648817
+Received update: /ndn/me-site/me/svs_core/me=4, 1742581648817
+Received update: /ndn/me-site/me/svs_core/me=5, 1742581648817
+Sending Sync interest
+Received update: /ndn/bg-site/bg/svs_core/bg=5, 1742581649186
+Received update: /ndn/gr-site/gr/svs_core/gr=5, 1742581649186
+Received update: /ndn/it-site/it/svs_core/it=5, 1742581649186
+Received update: /ndn/si-site/si/svs_core/si=5, 1742581649186
+Received update: /ndn/fr2-site/fr2/svs_core/fr2=4, 1742581649186
+Max suppression time updated to: 252
+Received update: /ndn/dk-site/dk/svs_core/dk=5, 1742581649198
+Received update: /ndn/es-site/es/svs_core/es=5, 1742581649198
+Received update: /ndn/is-site/is/svs_core/is=4, 1742581649198
+Received update: /ndn/is-site/is/svs_core/is=5, 1742581649198
+Received update: /ndn/pt-site/pt/svs_core/pt=4, 1742581649198
+Received update: /ndn/pt-site/pt/svs_core/pt=5, 1742581649198
+Received update: /ndn/ge-site/ge/svs_core/ge=5, 1742581649390
+Received update: /ndn/ch-site/ch/svs_core/ch=5, 1742581653380
+Received update: /ndn/uk-site/uk/svs_core/uk=5, 1742581653380
+Received update: /ndn/fr1-site/fr1/svs_core/fr1=5, 1742581653380
+Received update: /ndn/hu-site/hu/svs_core/hu=5, 1742581655708
+Received update: /ndn/mk-site/mk/svs_core/mk=5, 1742581655708
+Received update: /ndn/rs-site/rs/svs_core/rs=4, 1742581655708
+Received update: /ndn/rs-site/rs/svs_core/rs=5, 1742581655708
+Received update: /ndn/de1-site/de1/svs_core/de1=5, 1742581655708
+Received update: /ndn/cz-site/cz/svs_core/cz=5, 1742581655907
+Received update: /ndn/lt-site/lt/svs_core/lt=5, 1742581655907
+Received update: /ndn/az-site/az/svs_core/az=5, 1742581656333
+Received update: /ndn/lu-site/lu/svs_core/lu=5, 1742581658716
+Received update: /ndn/rs-site/rs/svs_core/rs=6, 1742581658716
+Received update: /ndn/am-site/am/svs_core/am=4, 1742581662710
+Received update: /ndn/am-site/am/svs_core/am=5, 1742581662710
+Received update: /ndn/be-site/be/svs_core/be=5, 1742581662710
+Received update: /ndn/be-site/be/svs_core/be=6, 1742581662710
+Received update: /ndn/fi-site/fi/svs_core/fi=2, 1742581662710
+Received update: /ndn/is-site/is/svs_core/is=6, 1742581662710
+Received update: /ndn/mk-site/mk/svs_core/mk=6, 1742581662710
+Received update: /ndn/no-site/no/svs_core/no=1, 1742581662710
+Received update: /ndn/no-site/no/svs_core/no=2, 1742581662710
+Received update: /ndn/no-site/no/svs_core/no=3, 1742581662710
+Received update: /ndn/pt-site/pt/svs_core/pt=6, 1742581662710
+Received update: /ndn/ro-site/ro/svs_core/ro=6, 1742581662710
+Received update: /ndn/se-site/se/svs_core/se=2, 1742581662710
+Received update: /ndn/se-site/se/svs_core/se=3, 1742581662710
+Received update: /ndn/se-site/se/svs_core/se=4, 1742581662710
+Received update: /ndn/se-site/se/svs_core/se=5, 1742581662710
+Received update: /ndn/by-site/by/svs_core/by=5, 1742581671182
+Received update: /ndn/dk-site/dk/svs_core/dk=6, 1742581671182
+Received update: /ndn/ee-site/ee/svs_core/ee=5, 1742581671182
+Received update: /ndn/nl-site/nl/svs_core/nl=6, 1742581671182
+Received update: /ndn/de2-site/de2/svs_core/de2=6, 1742581671229
+Sending Sync interest
+Received update: /ndn/al-site/al/svs_core/al=5, 1742581681087
+Received update: /ndn/al-site/al/svs_core/al=6, 1742581681087
+Received update: /ndn/at-site/at/svs_core/at=6, 1742581681087
+Received update: /ndn/cz-site/cz/svs_core/cz=6, 1742581681087
+Received update: /ndn/gr-site/gr/svs_core/gr=6, 1742581681087
+Received update: /ndn/it-site/it/svs_core/it=6, 1742581681087
+Received update: /ndn/pl-site/pl/svs_core/pl=6, 1742581681087
+Received update: /ndn/ua-site/ua/svs_core/ua=6, 1742581681087
+Received update: /ndn/tr-site/tr/svs_core/tr=6, 1742581681145
+Received update: /ndn/ee-site/ee/svs_core/ee=6, 1742581681354
+Received update: /ndn/de1-site/de1/svs_core/de1=6, 1742581681354
+Published sequence number: /ndn/cy-site/cy/svs_core/cy=6, 1742581688064
+Sending Sync interest
+Received update: /ndn/by-site/by/svs_core/by=6, 1742581695992
+Received update: /ndn/ge-site/ge/svs_core/ge=6, 1742581695992
+Received update: /ndn/hu-site/hu/svs_core/hu=6, 1742581695992
+Received update: /ndn/lt-site/lt/svs_core/lt=6, 1742581695992
+Received update: /ndn/me-site/me/svs_core/me=6, 1742581695992
+Received update: /ndn/sk-site/sk/svs_core/sk=6, 1742581695992
+Received update: /ndn/bg-site/bg/svs_core/bg=6, 1742581696098
+Received update: /ndn/hr-site/hr/svs_core/hr=6, 1742581696098
+Received update: /ndn/mk-site/mk/svs_core/mk=7, 1742581700837
+Received update: /ndn/ro-site/ro/svs_core/ro=7, 1742581700837
+Received update: /ndn/az-site/az/svs_core/az=6, 1742581701621
+Received update: /ndn/lu-site/lu/svs_core/lu=6, 1742581701621
+Received update: /ndn/al-site/al/svs_core/al=7, 1742581717544
+Received update: /ndn/at-site/at/svs_core/at=7, 1742581717544
+Received update: /ndn/ch-site/ch/svs_core/ch=6, 1742581717544
+Received update: /ndn/es-site/es/svs_core/es=6, 1742581717544
+Received update: /ndn/gr-site/gr/svs_core/gr=7, 1742581717544
+Received update: /ndn/ie-site/ie/svs_core/ie=5, 1742581717544
+Received update: /ndn/ie-site/ie/svs_core/ie=6, 1742581717544
+Received update: /ndn/is-site/is/svs_core/is=7, 1742581717544
+Received update: /ndn/it-site/it/svs_core/it=7, 1742581717544
+Received update: /ndn/nl-site/nl/svs_core/nl=7, 1742581717544
+Received update: /ndn/sk-site/sk/svs_core/sk=7, 1742581717544
+Received update: /ndn/uk-site/uk/svs_core/uk=6, 1742581717544
+Received update: /ndn/de2-site/de2/svs_core/de2=7, 1742581717544
+Received update: /ndn/fr1-site/fr1/svs_core/fr1=6, 1742581717544
+Received update: /ndn/fr2-site/fr2/svs_core/fr2=5, 1742581717544
+Received update: /ndn/fr2-site/fr2/svs_core/fr2=6, 1742581717544
+Received update: /ndn/lt-site/lt/svs_core/lt=7, 1742581717797
+Received update: /ndn/lv-site/lv/svs_core/lv=6, 1742581717797
+Received update: /ndn/pl-site/pl/svs_core/pl=7, 1742581717797
+Received update: /ndn/by-site/by/svs_core/by=7, 1742581717844
+Received update: /ndn/be-site/be/svs_core/be=7, 1742581718428
+Received update: /ndn/dk-site/dk/svs_core/dk=7, 1742581718428
+Received update: /ndn/es-site/es/svs_core/es=7, 1742581718428
+Received update: /ndn/no-site/no/svs_core/no=4, 1742581718428
+Received update: /ndn/no-site/no/svs_core/no=5, 1742581718428
+Received update: /ndn/no-site/no/svs_core/no=6, 1742581718428
+Received update: /ndn/rs-site/rs/svs_core/rs=7, 1742581718428
+Received update: /ndn/se-site/se/svs_core/se=6, 1742581718428
+Received update: /ndn/il-site/il/svs_core/il=6, 1742581719037
+Received update: /ndn/cz-site/cz/svs_core/cz=7, 1742581726141
+Received update: /ndn/tr-site/tr/svs_core/tr=7, 1742581726141
+Received update: /ndn/am-site/am/svs_core/am=6, 1742581727349
+Received update: /ndn/mt-site/mt/svs_core/mt=5, 1742581727349
+Received update: /ndn/mt-site/mt/svs_core/mt=6, 1742581727349
+Received update: /ndn/si-site/si/svs_core/si=6, 1742581727349
+Published sequence number: /ndn/cy-site/cy/svs_core/cy=7, 1742581733074
+Sending Sync interest
+Received update: /ndn/fr2-site/fr2/svs_core/fr2=7, 1742581740534
+Received update: /ndn/ge-site/ge/svs_core/ge=7, 1742581740603
+Received update: /ndn/me-site/me/svs_core/me=7, 1742581740603
+Sending Sync interest
+Received update: /ndn/hu-site/hu/svs_core/hu=7, 1742581740818
+Sending Sync interest
+Received update: /ndn/uk-site/uk/svs_core/uk=7, 1742581741164
+Sending Sync interest
+Received update: /ndn/bg-site/bg/svs_core/bg=7, 1742581744257
+Received update: /ndn/ch-site/ch/svs_core/ch=7, 1742581744257
+Received update: /ndn/mk-site/mk/svs_core/mk=8, 1742581744257
+Sending Sync interest
+Received update: /ndn/se-site/se/svs_core/se=7, 1742581744664
+Received update: /ndn/si-site/si/svs_core/si=7, 1742581744664
+Sending Sync interest
+Received update: /ndn/lu-site/lu/svs_core/lu=7, 1742581745051
+Sending Sync interest
+Received update: /ndn/be-site/be/svs_core/be=8, 1742581751994
+Received update: /ndn/ie-site/ie/svs_core/ie=7, 1742581751994
+Received update: /ndn/fr1-site/fr1/svs_core/fr1=7, 1742581751994
+Received update: /ndn/pl-site/pl/svs_core/pl=8, 1742581753655
+Received update: /ndn/by-site/by/svs_core/by=8, 1742581753873
+Received update: /ndn/ie-site/ie/svs_core/ie=8, 1742581753873
+Received update: /ndn/hr-site/hr/svs_core/hr=7, 1742581753929
+Received update: /ndn/il-site/il/svs_core/il=7, 1742581754066
+Received update: /ndn/am-site/am/svs_core/am=7, 1742581754232
+Received update: /ndn/pt-site/pt/svs_core/pt=7, 1742581754375
+Received update: /ndn/pt-site/pt/svs_core/pt=8, 1742581754375
+Sending Sync interest
+Received update: /ndn/az-site/az/svs_core/az=7, 1742581757020
+Received update: /ndn/de2-site/de2/svs_core/de2=8, 1742581757020
+Received update: /ndn/al-site/al/svs_core/al=8, 1742581768712
+Received update: /ndn/at-site/at/svs_core/at=8, 1742581768712
+Received update: /ndn/gr-site/gr/svs_core/gr=8, 1742581768712
+Received update: /ndn/it-site/it/svs_core/it=8, 1742581768712
+Received update: /ndn/nl-site/nl/svs_core/nl=8, 1742581768712
+Received update: /ndn/ro-site/ro/svs_core/ro=8, 1742581768712
+Received update: /ndn/rs-site/rs/svs_core/rs=8, 1742581768712
+Received update: /ndn/tr-site/tr/svs_core/tr=8, 1742581768712
+Received update: /ndn/il-site/il/svs_core/il=8, 1742581769176
+Published sequence number: /ndn/cy-site/cy/svs_core/cy=8, 1742581778076
+Sending Sync interest
+Received update: /ndn/ge-site/ge/svs_core/ge=8, 1742581782013
+Sending Sync interest
+Received update: /ndn/ch-site/ch/svs_core/ch=8, 1742581785667
+Received update: /ndn/cz-site/cz/svs_core/cz=8, 1742581785667
+Received update: /ndn/hr-site/hr/svs_core/hr=8, 1742581785667
+Received update: /ndn/me-site/me/svs_core/me=8, 1742581785667
+Sending Sync interest
+Received update: /ndn/bg-site/bg/svs_core/bg=8, 1742581786288
+Received update: /ndn/ee-site/ee/svs_core/ee=7, 1742581786288
+Received update: /ndn/es-site/es/svs_core/es=8, 1742581786288
+Received update: /ndn/hu-site/hu/svs_core/hu=8, 1742581786288
+Received update: /ndn/md-site/md/svs_core/md=5, 1742581786288
+Received update: /ndn/md-site/md/svs_core/md=6, 1742581786288
+Received update: /ndn/md-site/md/svs_core/md=7, 1742581786288
+Received update: /ndn/md-site/md/svs_core/md=8, 1742581786288
+Received update: /ndn/uk-site/uk/svs_core/uk=8, 1742581786288
+Received update: /ndn/de1-site/de1/svs_core/de1=7, 1742581786288
+Received update: /ndn/dk-site/dk/svs_core/dk=8, 1742581787346
+Received update: /ndn/is-site/is/svs_core/is=8, 1742581787346
+Received update: /ndn/se-site/se/svs_core/se=8, 1742581787346
+Received update: /ndn/si-site/si/svs_core/si=8, 1742581787346
+Received update: /ndn/lu-site/lu/svs_core/lu=8, 1742581787781
+Sending Sync interest
+Max suppression time updated to: 198
+Received update: /ndn/ee-site/ee/svs_core/ee=8, 1742581788104
+Received update: /ndn/de1-site/de1/svs_core/de1=8, 1742581788104
+Received update: /ndn/fr2-site/fr2/svs_core/fr2=8, 1742581788104
+Received update: /ndn/sk-site/sk/svs_core/sk=8, 1742581788180
+Sending Sync interest
+Received update: /ndn/pt-site/pt/svs_core/pt=9, 1742581799965
+Received update: /ndn/ro-site/ro/svs_core/ro=9, 1742581799965
+Received update: /ndn/rs-site/rs/svs_core/rs=9, 1742581799965
+Received update: /ndn/fr1-site/fr1/svs_core/fr1=8, 1742581799965
+Received update: /ndn/ee-site/ee/svs_core/ee=9, 1742581802023
+Received update: /ndn/lt-site/lt/svs_core/lt=8, 1742581802023
+Received update: /ndn/lv-site/lv/svs_core/lv=7, 1742581802023
+Received update: /ndn/lv-site/lv/svs_core/lv=8, 1742581802023
+Received update: /ndn/pl-site/pl/svs_core/pl=9, 1742581802023
+Received update: /ndn/de2-site/de2/svs_core/de2=9, 1742581802023
+Received update: /ndn/at-site/at/svs_core/at=9, 1742581814568
+Received update: /ndn/az-site/az/svs_core/az=8, 1742581814568
+Received update: /ndn/es-site/es/svs_core/es=9, 1742581814568
+Received update: /ndn/it-site/it/svs_core/it=9, 1742581814568
+Received update: /ndn/mk-site/mk/svs_core/mk=9, 1742581814568
+Received update: /ndn/sk-site/sk/svs_core/sk=9, 1742581814568
+Received update: /ndn/tr-site/tr/svs_core/tr=9, 1742581814568
+Published sequence number: /ndn/cy-site/cy/svs_core/cy=9, 1742581823078
+Sending Sync interest
+Max suppression time updated to: 195
+Received update: /ndn/bg-site/bg/svs_core/bg=9, 1742581823316
+Received update: /ndn/by-site/by/svs_core/by=9, 1742581823456
+Received update: /ndn/be-site/be/svs_core/be=9, 1742581823535
+Received update: /ndn/dk-site/dk/svs_core/dk=9, 1742581823535
+Received update: /ndn/nl-site/nl/svs_core/nl=9, 1742581823535
+Received update: /ndn/cz-site/cz/svs_core/cz=9, 1742581823607
+Received update: /ndn/is-site/is/svs_core/is=9, 1742581823714
+Received update: /ndn/am-site/am/svs_core/am=8, 1742581825700
+Received update: /ndn/gr-site/gr/svs_core/gr=9, 1742581825700
+Received update: /ndn/lt-site/lt/svs_core/lt=9, 1742581825700
+Received update: /ndn/lv-site/lv/svs_core/lv=9, 1742581825700
+Received update: /ndn/mt-site/mt/svs_core/mt=7, 1742581825700
+Received update: /ndn/mt-site/mt/svs_core/mt=8, 1742581825700
+Received update: /ndn/mt-site/mt/svs_core/mt=9, 1742581825700
+Received update: /ndn/si-site/si/svs_core/si=9, 1742581825700
+Received update: /ndn/de1-site/de1/svs_core/de1=9, 1742581825700
+Received update: /ndn/hu-site/hu/svs_core/hu=9, 1742581830826
+Received update: /ndn/ge-site/ge/svs_core/ge=9, 1742581832890
+Received update: /ndn/il-site/il/svs_core/il=9, 1742581832890
+Received update: /ndn/lu-site/lu/svs_core/lu=9, 1742581832890
+Received update: /ndn/fi-site/fi/svs_core/fi=3, 1742581836693
+Received update: /ndn/fi-site/fi/svs_core/fi=4, 1742581836693
+Received update: /ndn/fi-site/fi/svs_core/fi=5, 1742581836693
+Received update: /ndn/fi-site/fi/svs_core/fi=6, 1742581836693
+Received update: /ndn/fi-site/fi/svs_core/fi=7, 1742581836693
+Received update: /ndn/fi-site/fi/svs_core/fi=8, 1742581836693
+Received update: /ndn/ie-site/ie/svs_core/ie=9, 1742581836693
+Received update: /ndn/is-site/is/svs_core/is=10, 1742581836693
+Received update: /ndn/no-site/no/svs_core/no=7, 1742581836693
+Received update: /ndn/no-site/no/svs_core/no=8, 1742581836693
+Received update: /ndn/no-site/no/svs_core/no=9, 1742581836693
+Received update: /ndn/se-site/se/svs_core/se=9, 1742581836693
+Received update: /ndn/uk-site/uk/svs_core/uk=9, 1742581836693
+Received update: /ndn/ch-site/ch/svs_core/ch=9, 1742581836738
+Received update: /ndn/rs-site/rs/svs_core/rs=10, 1742581838594
+Sending Sync interest
+Received update: /ndn/am-site/am/svs_core/am=9, 1742581839010
+Received update: /ndn/hr-site/hr/svs_core/hr=9, 1742581839010
+Received update: /ndn/mk-site/mk/svs_core/mk=10, 1742581839010
+Received update: /ndn/ro-site/ro/svs_core/ro=10, 1742581839010
+Received update: /ndn/al-site/al/svs_core/al=9, 1742581847758
+Received update: /ndn/ie-site/ie/svs_core/ie=10, 1742581847758
+Received update: /ndn/me-site/me/svs_core/me=9, 1742581847758
+Received update: /ndn/pl-site/pl/svs_core/pl=10, 1742581847758
+Received update: /ndn/pt-site/pt/svs_core/pt=10, 1742581847866
+Received update: /ndn/az-site/az/svs_core/az=9, 1742581847867
+Received update: /ndn/sk-site/sk/svs_core/sk=10, 1742581847867
+Received update: /ndn/de2-site/de2/svs_core/de2=10, 1742581847867
+Received update: /ndn/be-site/be/svs_core/be=10, 1742581847989
+Sending Sync interest
+Published sequence number: /ndn/cy-site/cy/svs_core/cy=10, 1742581868081
+Sending Sync interest
+Max suppression time updated to: 177
+Received update: /ndn/tr-site/tr/svs_core/tr=10, 1742581868152
+Received update: /ndn/at-site/at/svs_core/at=10, 1742581868342
+Received update: /ndn/dk-site/dk/svs_core/dk=10, 1742581868342
+Received update: /ndn/fi-site/fi/svs_core/fi=9, 1742581868342
+Received update: /ndn/nl-site/nl/svs_core/nl=10, 1742581868342
+Received update: /ndn/se-site/se/svs_core/se=10, 1742581868342
+Received update: /ndn/ua-site/ua/svs_core/ua=7, 1742581868342
+Received update: /ndn/ua-site/ua/svs_core/ua=8, 1742581868342
+Received update: /ndn/ua-site/ua/svs_core/ua=9, 1742581868342
+Received update: /ndn/cz-site/cz/svs_core/cz=10, 1742581873182
+Received update: /ndn/ge-site/ge/svs_core/ge=10, 1742581873182
+Received update: /ndn/gr-site/gr/svs_core/gr=10, 1742581873182
+Received update: /ndn/hr-site/hr/svs_core/hr=10, 1742581873182
+Received update: /ndn/it-site/it/svs_core/it=10, 1742581873182
+Received update: /ndn/lt-site/lt/svs_core/lt=10, 1742581873182
+Received update: /ndn/md-site/md/svs_core/md=9, 1742581873182
+Received update: /ndn/md-site/md/svs_core/md=10, 1742581873182
+Received update: /ndn/fr2-site/fr2/svs_core/fr2=9, 1742581873182
+Received update: /ndn/by-site/by/svs_core/by=10, 1742581874075
+Received update: /ndn/me-site/me/svs_core/me=10, 1742581874075
+Received update: /ndn/fr1-site/fr1/svs_core/fr1=9, 1742581874075
+Received update: /ndn/bg-site/bg/svs_core/bg=10, 1742581874113
+Received update: /ndn/si-site/si/svs_core/si=10, 1742581874113
+Received update: /ndn/ua-site/ua/svs_core/ua=10, 1742581874113
+Received update: /ndn/is-site/is/svs_core/is=11, 1742581881647
+Received update: /ndn/az-site/az/svs_core/az=10, 1742581884900
+Received update: /ndn/ch-site/ch/svs_core/ch=10, 1742581884900
+Received update: /ndn/hu-site/hu/svs_core/hu=10, 1742581884900
+Received update: /ndn/rs-site/rs/svs_core/rs=11, 1742581884900
+Received update: /ndn/uk-site/uk/svs_core/uk=10, 1742581884900
+Received update: /ndn/fr1-site/fr1/svs_core/fr1=10, 1742581884900
+Received update: /ndn/fr2-site/fr2/svs_core/fr2=10, 1742581884900
+Received update: /ndn/es-site/es/svs_core/es=10, 1742581886140
+Received update: /ndn/es-site/es/svs_core/es=11, 1742581886140
+Received update: /ndn/ie-site/ie/svs_core/ie=11, 1742581889183
+Received update: /ndn/il-site/il/svs_core/il=10, 1742581889183
+Received update: /ndn/lu-site/lu/svs_core/lu=10, 1742581889183
+Received update: /ndn/de1-site/de1/svs_core/de1=10, 1742581889183
+Sending Sync interest
+Received update: /ndn/tr-site/tr/svs_core/tr=11, 1742581902964
+Received update: /ndn/il-site/il/svs_core/il=11, 1742581904123
+Sending Sync interest
+Max suppression time updated to: 162
+Received update: /ndn/by-site/by/svs_core/by=11, 1742581904384
+Received update: /ndn/pl-site/pl/svs_core/pl=11, 1742581904384
+Received update: /ndn/de2-site/de2/svs_core/de2=11, 1742581904384
+Received update: /ndn/at-site/at/svs_core/at=11, 1742581906186
+Received update: /ndn/cz-site/cz/svs_core/cz=11, 1742581906186
+Received update: /ndn/mk-site/mk/svs_core/mk=11, 1742581906186
+Received update: /ndn/nl-site/nl/svs_core/nl=11, 1742581906186
+Received update: /ndn/ro-site/ro/svs_core/ro=11, 1742581906186
+Received update: /ndn/sk-site/sk/svs_core/sk=11, 1742581906186
+Received update: /ndn/be-site/be/svs_core/be=11, 1742581906230
+Published sequence number: /ndn/cy-site/cy/svs_core/cy=11, 1742581913091
+Sending Sync interest
+Received update: /ndn/ie-site/ie/svs_core/ie=12, 1742581928059
+Received update: /ndn/is-site/is/svs_core/is=12, 1742581928059
+Received update: /ndn/uk-site/uk/svs_core/uk=11, 1742581928059
+Received update: /ndn/de1-site/de1/svs_core/de1=11, 1742581928059
+Received update: /ndn/gr-site/gr/svs_core/gr=11, 1742581928418
+Received update: /ndn/hr-site/hr/svs_core/hr=11, 1742581928418
+Received update: /ndn/hu-site/hu/svs_core/hu=11, 1742581928418
+Received update: /ndn/it-site/it/svs_core/it=11, 1742581928418
+Received update: /ndn/me-site/me/svs_core/me=11, 1742581928418
+Received update: /ndn/mt-site/mt/svs_core/mt=10, 1742581928418
+Received update: /ndn/mt-site/mt/svs_core/mt=11, 1742581928418
+Received update: /ndn/ro-site/ro/svs_core/ro=12, 1742581928418
+Received update: /ndn/fr2-site/fr2/svs_core/fr2=11, 1742581928418
+Sending Sync interest
+Received update: /ndn/al-site/al/svs_core/al=10, 1742581928812
+Received update: /ndn/al-site/al/svs_core/al=11, 1742581928812
+Received update: /ndn/ch-site/ch/svs_core/ch=11, 1742581928812
+Received update: /ndn/lu-site/lu/svs_core/lu=11, 1742581928812
+Received update: /ndn/fr1-site/fr1/svs_core/fr1=11, 1742581928812
+Received update: /ndn/mk-site/mk/svs_core/mk=12, 1742581928814
+Received update: /ndn/ua-site/ua/svs_core/ua=11, 1742581928814
+Sending Sync interest
+Received update: /ndn/az-site/az/svs_core/az=11, 1742581928905
+Sending Sync interest
+Received update: /ndn/ge-site/ge/svs_core/ge=11, 1742581937473
+Received update: /ndn/sk-site/sk/svs_core/sk=12, 1742581937473
+Received update: /ndn/de2-site/de2/svs_core/de2=12, 1742581937473
+Received update: /ndn/bg-site/bg/svs_core/bg=11, 1742581939180
+Received update: /ndn/at-site/at/svs_core/at=12, 1742581939337
+Received update: /ndn/by-site/by/svs_core/by=12, 1742581939337
+Received update: /ndn/lt-site/lt/svs_core/lt=11, 1742581939337
+Received update: /ndn/pl-site/pl/svs_core/pl=12, 1742581939337
+Received update: /ndn/al-site/al/svs_core/al=12, 1742581942476
+Received update: /ndn/gr-site/gr/svs_core/gr=12, 1742581942476
+Received update: /ndn/it-site/it/svs_core/it=12, 1742581942476
+Sending Sync interest
+Received update: /ndn/nl-site/nl/svs_core/nl=12, 1742581942794
+Sending Sync interest
+Max suppression time updated to: 147
+Received update: /ndn/be-site/be/svs_core/be=12, 1742581943045
+Max suppression time updated to: 198
+Received update: /ndn/es-site/es/svs_core/es=12, 1742581945165
+Sending Sync interest
+Published sequence number: /ndn/cy-site/cy/svs_core/cy=12, 1742581958097
+Sending Sync interest
+Received update: /ndn/am-site/am/svs_core/am=10, 1742581966114
+Received update: /ndn/am-site/am/svs_core/am=11, 1742581966114
+Received update: /ndn/bg-site/bg/svs_core/bg=12, 1742581966114
+Received update: /ndn/cz-site/cz/svs_core/cz=12, 1742581966114
+Received update: /ndn/hr-site/hr/svs_core/hr=12, 1742581966114
+Received update: /ndn/hu-site/hu/svs_core/hu=12, 1742581966114
+Received update: /ndn/lt-site/lt/svs_core/lt=12, 1742581966114
+Received update: /ndn/me-site/me/svs_core/me=12, 1742581966114
+Received update: /ndn/si-site/si/svs_core/si=11, 1742581966114
+Received update: /ndn/si-site/si/svs_core/si=12, 1742581966114
+Received update: /ndn/tr-site/tr/svs_core/tr=12, 1742581966114
+Received update: /ndn/ua-site/ua/svs_core/ua=12, 1742581966114
+Received update: /ndn/ch-site/ch/svs_core/ch=12, 1742581966791
+Received update: /ndn/ee-site/ee/svs_core/ee=10, 1742581966791
+Received update: /ndn/ee-site/ee/svs_core/ee=11, 1742581966791
+Received update: /ndn/ee-site/ee/svs_core/ee=12, 1742581966791
+Received update: /ndn/lv-site/lv/svs_core/lv=10, 1742581966791
+Received update: /ndn/lv-site/lv/svs_core/lv=11, 1742581966791
+Received update: /ndn/lv-site/lv/svs_core/lv=12, 1742581966791
+Received update: /ndn/pt-site/pt/svs_core/pt=11, 1742581966791
+Received update: /ndn/pt-site/pt/svs_core/pt=12, 1742581966791
+Received update: /ndn/uk-site/uk/svs_core/uk=12, 1742581966791
+Received update: /ndn/ge-site/ge/svs_core/ge=12, 1742581966803
+Received update: /ndn/md-site/md/svs_core/md=11, 1742581966803
+Received update: /ndn/md-site/md/svs_core/md=12, 1742581966803
+Received update: /ndn/az-site/az/svs_core/az=12, 1742581969475
+Received update: /ndn/il-site/il/svs_core/il=12, 1742581969475
+Received update: /ndn/lu-site/lu/svs_core/lu=12, 1742581969475
+Received update: /ndn/rs-site/rs/svs_core/rs=12, 1742581969475
+Received update: /ndn/md-site/md/svs_core/md=13, 1742581980216
+Received update: /ndn/mk-site/mk/svs_core/mk=13, 1742581980216
+Received update: /ndn/pl-site/pl/svs_core/pl=13, 1742581980216
+Received update: /ndn/ro-site/ro/svs_core/ro=13, 1742581980216
+Received update: /ndn/rs-site/rs/svs_core/rs=13, 1742581980216
+Received update: /ndn/es-site/es/svs_core/es=13, 1742581980580
+Received update: /ndn/ie-site/ie/svs_core/ie=13, 1742581980580
+Received update: /ndn/pt-site/pt/svs_core/pt=13, 1742581980580
+Received update: /ndn/fr1-site/fr1/svs_core/fr1=12, 1742581980580
+Received update: /ndn/de2-site/de2/svs_core/de2=13, 1742581982060
+Received update: /ndn/al-site/al/svs_core/al=13, 1742581992972
+Received update: /ndn/at-site/at/svs_core/at=13, 1742581992972
+Received update: /ndn/by-site/by/svs_core/by=13, 1742581992972
+Received update: /ndn/it-site/it/svs_core/it=13, 1742581992972
+Received update: /ndn/mt-site/mt/svs_core/mt=12, 1742581992972
+Received update: /ndn/nl-site/nl/svs_core/nl=13, 1742581992972
+Received update: /ndn/sk-site/sk/svs_core/sk=13, 1742581992972
+Received update: /ndn/tr-site/tr/svs_core/tr=13, 1742581992972
+Received update: /ndn/ua-site/ua/svs_core/ua=13, 1742581992972
+Received update: /ndn/fr2-site/fr2/svs_core/fr2=12, 1742581992972
+Received update: /ndn/cz-site/cz/svs_core/cz=13, 1742581996081
+Received update: /ndn/be-site/be/svs_core/be=13, 1742581996318
+Received update: /ndn/dk-site/dk/svs_core/dk=11, 1742581996318
+Received update: /ndn/dk-site/dk/svs_core/dk=12, 1742581996318
+Received update: /ndn/ee-site/ee/svs_core/ee=13, 1742581996318
+Received update: /ndn/de1-site/de1/svs_core/de1=12, 1742581996318
+Published sequence number: /ndn/cy-site/cy/svs_core/cy=13, 1742582003105
+Sending Sync interest
+Received update: /ndn/bg-site/bg/svs_core/bg=13, 1742582007214
+Received update: /ndn/ge-site/ge/svs_core/ge=13, 1742582007214
+Sending Sync interest
+Sending Sync interest
+Received update: /ndn/ch-site/ch/svs_core/ch=13, 1742582010675
+Received update: /ndn/gr-site/gr/svs_core/gr=13, 1742582010675
+Received update: /ndn/mt-site/mt/svs_core/mt=13, 1742582010675
+Received update: /ndn/fr2-site/fr2/svs_core/fr2=13, 1742582010675
+Sending Sync interest
+Received update: /ndn/mk-site/mk/svs_core/mk=14, 1742582014249
+Received update: /ndn/de1-site/de1/svs_core/de1=13, 1742582014249
+Received update: /ndn/uk-site/uk/svs_core/uk=13, 1742582014407
+Received update: /ndn/fr1-site/fr1/svs_core/fr1=13, 1742582014407
+Received update: /ndn/hr-site/hr/svs_core/hr=13, 1742582014418
+Received update: /ndn/hu-site/hu/svs_core/hu=13, 1742582014418
+Received update: /ndn/am-site/am/svs_core/am=12, 1742582029050
+Received update: /ndn/am-site/am/svs_core/am=13, 1742582029050
+Received update: /ndn/ro-site/ro/svs_core/ro=14, 1742582029050
+Received update: /ndn/ua-site/ua/svs_core/ua=14, 1742582029050
+Received update: /ndn/de2-site/de2/svs_core/de2=14, 1742582029050
+Received update: /ndn/at-site/at/svs_core/at=14, 1742582039474
+Received update: /ndn/be-site/be/svs_core/be=14, 1742582039474
+Received update: /ndn/il-site/il/svs_core/il=13, 1742582039474
+Received update: /ndn/il-site/il/svs_core/il=14, 1742582039474
+Received update: /ndn/it-site/it/svs_core/it=14, 1742582039474
+Received update: /ndn/lu-site/lu/svs_core/lu=13, 1742582039474
+Received update: /ndn/me-site/me/svs_core/me=13, 1742582039474
+Received update: /ndn/nl-site/nl/svs_core/nl=14, 1742582039474
+Received update: /ndn/pl-site/pl/svs_core/pl=14, 1742582039474
+Received update: /ndn/si-site/si/svs_core/si=13, 1742582041250
+Sending Sync interest
+Published sequence number: /ndn/cy-site/cy/svs_core/cy=14, 1742582048114
+Sending Sync interest
+Received update: /ndn/bg-site/bg/svs_core/bg=14, 1742582050412
+Received update: /ndn/mt-site/mt/svs_core/mt=14, 1742582050412
+Received update: /ndn/sk-site/sk/svs_core/sk=14, 1742582050412
+Received update: /ndn/tr-site/tr/svs_core/tr=14, 1742582050412
+Sending Sync interest
+Received update: /ndn/es-site/es/svs_core/es=14, 1742582051044
+Received update: /ndn/gr-site/gr/svs_core/gr=14, 1742582051044
+Received update: /ndn/hr-site/hr/svs_core/hr=14, 1742582051044
+Received update: /ndn/md-site/md/svs_core/md=14, 1742582051044
+Received update: /ndn/cz-site/cz/svs_core/cz=14, 1742582051068
+Received update: /ndn/rs-site/rs/svs_core/rs=14, 1742582051068
+Received update: /ndn/uk-site/uk/svs_core/uk=14, 1742582056195
+Sending Sync interest
+Received update: /ndn/am-site/am/svs_core/am=14, 1742582056330
+Received update: /ndn/ge-site/ge/svs_core/ge=14, 1742582056330
+Received update: /ndn/hu-site/hu/svs_core/hu=14, 1742582056330
+Received update: /ndn/by-site/by/svs_core/by=14, 1742582058719
+Received update: /ndn/ie-site/ie/svs_core/ie=14, 1742582058719
+Received update: /ndn/ch-site/ch/svs_core/ch=14, 1742582058753
+Received update: /ndn/fr2-site/fr2/svs_core/fr2=14, 1742582058753
+Received update: /ndn/lu-site/lu/svs_core/lu=14, 1742582059140
+Received update: /ndn/pl-site/pl/svs_core/pl=15, 1742582068681
+Received update: /ndn/by-site/by/svs_core/by=15, 1742582068895
+Sending Sync interest
+Max suppression time updated to: 183
+Received update: /ndn/si-site/si/svs_core/si=14, 1742582069090
+Max suppression time updated to: 186
+Received update: /ndn/fr1-site/fr1/svs_core/fr1=14, 1742582070292
+Received update: /ndn/be-site/be/svs_core/be=15, 1742582070292
+Received update: /ndn/dk-site/dk/svs_core/dk=13, 1742582070292
+Received update: /ndn/fi-site/fi/svs_core/fi=10, 1742582070292
+Received update: /ndn/fi-site/fi/svs_core/fi=11, 1742582070292
+Received update: /ndn/fi-site/fi/svs_core/fi=12, 1742582070292
+Received update: /ndn/is-site/is/svs_core/is=13, 1742582070292
+Received update: /ndn/is-site/is/svs_core/is=14, 1742582070292
+Received update: /ndn/is-site/is/svs_core/is=15, 1742582070292
+Received update: /ndn/no-site/no/svs_core/no=10, 1742582070292
+Received update: /ndn/se-site/se/svs_core/se=11, 1742582070292
+Received update: /ndn/se-site/se/svs_core/se=12, 1742582070292
+Received update: /ndn/se-site/se/svs_core/se=13, 1742582070292
+Received update: /ndn/ie-site/ie/svs_core/ie=15, 1742582070294
+Received update: /ndn/pt-site/pt/svs_core/pt=14, 1742582070294
+Received update: /ndn/pt-site/pt/svs_core/pt=15, 1742582070294
+Received update: /ndn/me-site/me/svs_core/me=14, 1742582070427
+Received update: /ndn/mk-site/mk/svs_core/mk=15, 1742582070427
+Published sequence number: /ndn/cy-site/cy/svs_core/cy=15, 1742582093121
+Sending Sync interest
+Received update: /ndn/at-site/at/svs_core/at=15, 1742582093318
+Received update: /ndn/de2-site/de2/svs_core/de2=15, 1742582093318
+Received update: /ndn/gr-site/gr/svs_core/gr=15, 1742582093440
+Received update: /ndn/it-site/it/svs_core/it=15, 1742582093440
+Received update: /ndn/bg-site/bg/svs_core/bg=15, 1742582093464
+Received update: /ndn/md-site/md/svs_core/md=15, 1742582093464
+Received update: /ndn/ro-site/ro/svs_core/ro=15, 1742582093464
+Received update: /ndn/rs-site/rs/svs_core/rs=15, 1742582093464
+Received update: /ndn/tr-site/tr/svs_core/tr=15, 1742582093464
+Received update: /ndn/cz-site/cz/svs_core/cz=15, 1742582094477
+Received update: /ndn/sk-site/sk/svs_core/sk=15, 1742582095089
+Received update: /ndn/dk-site/dk/svs_core/dk=14, 1742582097315
+Received update: /ndn/dk-site/dk/svs_core/dk=15, 1742582097315
+Received update: /ndn/ee-site/ee/svs_core/ee=14, 1742582097315
+Received update: /ndn/ee-site/ee/svs_core/ee=15, 1742582097315
+Received update: /ndn/ge-site/ge/svs_core/ge=15, 1742582097315
+Received update: /ndn/hr-site/hr/svs_core/hr=15, 1742582097315
+Received update: /ndn/lt-site/lt/svs_core/lt=13, 1742582097315
+Received update: /ndn/lt-site/lt/svs_core/lt=14, 1742582097315
+Received update: /ndn/lt-site/lt/svs_core/lt=15, 1742582097315
+Received update: /ndn/lv-site/lv/svs_core/lv=13, 1742582097315
+Received update: /ndn/lv-site/lv/svs_core/lv=14, 1742582097315
+Received update: /ndn/lv-site/lv/svs_core/lv=15, 1742582097315
+Received update: /ndn/nl-site/nl/svs_core/nl=15, 1742582097315
+Received update: /ndn/de1-site/de1/svs_core/de1=14, 1742582097315
+Received update: /ndn/de1-site/de1/svs_core/de1=15, 1742582097315
+Received update: /ndn/am-site/am/svs_core/am=15, 1742582100136
+Sending Sync interest
+Received update: /ndn/ch-site/ch/svs_core/ch=15, 1742582100673
+Received update: /ndn/fr2-site/fr2/svs_core/fr2=15, 1742582100673
+Sending Sync interest
+Sending Sync interest
+Max suppression time updated to: 222
+Received update: /ndn/uk-site/uk/svs_core/uk=15, 1742582101904
+Received update: /ndn/az-site/az/svs_core/az=13, 1742582102532
+Received update: /ndn/az-site/az/svs_core/az=14, 1742582102532
+Received update: /ndn/az-site/az/svs_core/az=15, 1742582102532
+Sending Sync interest
+Received update: /ndn/hu-site/hu/svs_core/hu=15, 1742582102796
+Received update: /ndn/lu-site/lu/svs_core/lu=15, 1742582102796
+Received update: /ndn/be-site/be/svs_core/be=16, 1742582111914
+Sending Sync interest
+Max suppression time updated to: 222
+Received update: /ndn/me-site/me/svs_core/me=15, 1742582112052
+Max suppression time updated to: 213
+Received update: /ndn/mk-site/mk/svs_core/mk=16, 1742582112145
+Received update: /ndn/ro-site/ro/svs_core/ro=16, 1742582112145
+Max suppression time updated to: 204
+Received update: /ndn/fr1-site/fr1/svs_core/fr1=15, 1742582112157
+Max suppression time updated to: 195
+Received update: /ndn/ie-site/ie/svs_core/ie=16, 1742582112413
+Sending Sync interest
+Received update: /ndn/al-site/al/svs_core/al=14, 1742582112552
+Received update: /ndn/al-site/al/svs_core/al=15, 1742582112552
+Sending Sync interest
+Received update: /ndn/il-site/il/svs_core/il=15, 1742582114811
+Received update: /ndn/pl-site/pl/svs_core/pl=16, 1742582114811
+Received update: /ndn/ua-site/ua/svs_core/ua=15, 1742582114811
+Received update: /ndn/at-site/at/svs_core/at=16, 1742582118354
+Received update: /ndn/by-site/by/svs_core/by=16, 1742582118354
+Received update: /ndn/sk-site/sk/svs_core/sk=16, 1742582118354
+Received update: /ndn/de2-site/de2/svs_core/de2=16, 1742582118354
+Received update: /ndn/lt-site/lt/svs_core/lt=16, 1742582125035
+Received update: /ndn/dk-site/dk/svs_core/dk=16, 1742582125317
+Received update: /ndn/es-site/es/svs_core/es=15, 1742582125317
+Received update: /ndn/es-site/es/svs_core/es=16, 1742582125317
+Received update: /ndn/nl-site/nl/svs_core/nl=16, 1742582125317
+Received update: /ndn/al-site/al/svs_core/al=16, 1742582131043
+Received update: /ndn/cz-site/cz/svs_core/cz=16, 1742582131043
+Received update: /ndn/gr-site/gr/svs_core/gr=16, 1742582131043
+Received update: /ndn/it-site/it/svs_core/it=16, 1742582131043
+Sending Sync interest
+Received update: /ndn/is-site/is/svs_core/is=16, 1742582131390
+Received update: /ndn/de1-site/de1/svs_core/de1=16, 1742582131390
+Sending Sync interest
+Published sequence number: /ndn/cy-site/cy/svs_core/cy=16, 1742582138125
+Sending Sync interest
+Received update: /ndn/ch-site/ch/svs_core/ch=16, 1742582145671
+Received update: /ndn/lu-site/lu/svs_core/lu=16, 1742582147903
+Received update: /ndn/az-site/az/svs_core/az=16, 1742582148943
+Received update: /ndn/hr-site/hr/svs_core/hr=16, 1742582150095
+Received update: /ndn/uk-site/uk/svs_core/uk=16, 1742582150289
+Received update: /ndn/ge-site/ge/svs_core/ge=16, 1742582150583
+Received update: /ndn/hu-site/hu/svs_core/hu=16, 1742582150583
+Sending Sync interest
+Received update: /ndn/tr-site/tr/svs_core/tr=16, 1742582150755
+Received update: /ndn/fr1-site/fr1/svs_core/fr1=16, 1742582150903
+Sending Sync interest
+Sending Sync interest
+Stopping SVS client: /ndn/cy-site/cy/svs_core/cy
